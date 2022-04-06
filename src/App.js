@@ -1,10 +1,17 @@
-import Header from "./components/Header";
-import Resume from "./components/Resume";
+import Nav from "./components/Nav";
+import Projects from "./components/Projects";
+import Resume from "./Resume";
+import Footer from "./components/Footer";
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Resume />
+      <main>
+        <Projects />
+        <Resume />
+      </main>
+      <footer>
+        <Nav />
+      </footer>
     </div>
   );
 }

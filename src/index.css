@@ -2,9 +2,44 @@ body {
   height: 100vh;
   width: 100vw;
   background-image: linear-gradient(#5489a8, #faab7e);
-  /* background-color: #fbffff; */
+  position: static;
+  overflow-x: hidden;
 }
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 header {
-  height: fit-content;
-  background-color: #faab7e;
+  width: auto;
+}
+
+main {
+  width: 70%;
+}
+
+h2 {
+  border-bottom: black solid;
+}
+li {
+  list-style: none;
+}
+
+.nav-ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.card {
+  box-shadow: solid 6%, 6%, 6%, 6% rgb(255, 255, 255);
+  z-index: 10px;
+  width: auto;
+  text-align: center;
+  background-color: #13131351;
+}
+
+.resume-icon-ul {
+  display: flex;
+  justify-content: space-around;
 }

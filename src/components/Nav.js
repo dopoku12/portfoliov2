@@ -1,14 +1,14 @@
 
-import { FaHome, FaPaintBrush, FaCode, FaInfo, } from 'react-icons/fa';
+import { FaPaintBrush, FaCode, FaInfo, } from 'react-icons/fa';
 
-function Header() {
+function Nav() {
 
   const faNavIcons = [
     ///add behavior for click or hover
-    { id: 1, name: 'home', iconName: FaHome, clickHandler: function () { } },
-    { id: 2, name: 'projects', iconName: FaPaintBrush, clickHandler: function () { } },
-    { id: 3, name: 'resume', iconName: FaCode, clickHandler: function () { } },
-    { id: 4, name: 'aboutMe', iconName: FaInfo, clickHandler: function () { } }
+
+    { id: 1, name: 'projects', iconName: FaPaintBrush, clickHandler: function () { } },
+    { id: 2, name: 'resume', iconName: FaCode, clickHandler: function () { } },
+    { id: 3, name: 'aboutMe', iconName: FaInfo, clickHandler: function () { } }
 
   ]
 
@@ -25,6 +25,7 @@ function Header() {
                 <li key={items.id} className='nav-icons'>
                   <button>
                     <items.iconName color='5489A8' size={20} />
+                    <p>{items.name}</p>
                   </button>
                 </li>
               )
@@ -37,4 +38,4 @@ function Header() {
   );
 }
 
-export default Header
+export default Nav
