@@ -2,17 +2,16 @@
 import { FaPaintBrush, FaCode, FaInfo, } from 'react-icons/fa';
 
 function Nav() {
-
   const faNavIcons = [
     ///add behavior for click or hover
-
-    { id: 1, name: 'projects', iconName: FaPaintBrush, clickHandler: function () { } },
-    { id: 2, name: 'resume', iconName: FaCode, clickHandler: function () { } },
-    { id: 3, name: 'aboutMe', iconName: FaInfo, clickHandler: function () { } }
-
-  ]
-
-
+    { id: 1, name: 'projects', iconName: FaPaintBrush, },
+    { id: 2, name: 'resume', iconName: FaCode, },
+    { id: 3, name: 'aboutMe', iconName: FaInfo, }
+  ].map((i) => {
+    return (
+      { ...i, clickHandler: function () { } }
+    )
+  })
 
   return (
     <header>

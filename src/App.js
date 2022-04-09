@@ -1,7 +1,6 @@
 import Nav from "./components/Nav";
-import Projects from "./components/Projects";
+import Projects from "./Projects";
 import Resume from "./Resume";
-import Footer from "./components/Footer";
 function App() {
   return (
     <div className="App">

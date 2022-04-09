@@ -1,0 +1,29 @@
+@use "resume";
+$primary: #5489a8;
+$secondary: #faab7e;
+body {
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient($primary, $secondary);
+  position: static;
+  overflow-x: hidden;
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  header {
+    width: auto;
+  }
+
+  main {
+    width: 70%;
+  }
+}
+
+.nav-ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}

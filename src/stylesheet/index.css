@@ -1,0 +1,50 @@
+.card {
+  box-shadow: solid 6%, 6%, 6%, 6% white;
+  z-index: 10px;
+  width: auto;
+  text-align: center;
+  background-color: #13131351;
+}
+.card #header {
+  border: 1px #010101 solid;
+}
+.card .sub-header {
+  border-bottom: 1px #010101 solid;
+}
+
+.resume-icon-ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+}
+.resume-icon-ul .resume-icon {
+  font-size: 6px;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(#5489a8, #faab7e);
+  position: static;
+  overflow-x: hidden;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.App header {
+  width: auto;
+}
+.App main {
+  width: 70%;
+}
+
+.nav-ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+/*# sourceMappingURL=index.css.map */
