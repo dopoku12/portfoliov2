@@ -7,11 +7,12 @@ function Nav() {
     { id: 1, name: 'projects', iconName: FaPaintBrush, },
     { id: 2, name: 'resume', iconName: FaCode, },
     { id: 3, name: 'aboutMe', iconName: FaInfo, }
-  ].map((i) => {
-    return (
+  ].map(
+    i => (
       { ...i, clickHandler: function () { } }
     )
-  })
+
+  )
 
   return (
     <header>
@@ -19,12 +20,12 @@ function Nav() {
         <ul className='nav-ul'>
           {
 
-            faNavIcons.map((items) => {
+            faNavIcons.map((i) => {
               return (
-                <li key={items.id} className='nav-icons'>
+                <li key={i.id} className='nav-icons'>
                   <button>
-                    <items.iconName color='5489A8' size={20} />
-                    <p>{items.name}</p>
+                    <i.iconName color='5489A8' size={20} />
+                    <p>{i.name}</p>
                   </button>
                 </li>
               )
