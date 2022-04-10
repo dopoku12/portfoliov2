@@ -1,3 +1,4 @@
+@use "themes";
 .card {
   box-shadow: solid 6%, 6%, 6%, 6% rgb(255, 255, 255);
   z-index: 10px;
@@ -5,11 +6,11 @@
   text-align: center;
   background-color: #13131351;
   #header {
-    border: 1px rgb(1, 1, 1) solid;
+    border: 1px linear-gradient() solid;
   }
 
   .sub-header {
-    border-bottom: 1px rgb(1, 1, 1) solid;
+    border-bottom: 1px rgb(255, 255, 255) solid;
   }
 }
 

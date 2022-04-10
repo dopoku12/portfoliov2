@@ -1,51 +1,17 @@
-.card {
-  box-shadow: solid 6%, 6%, 6%, 6% white;
-  z-index: 10px;
-  width: auto;
-  text-align: center;
-  background-color: #13131351;
-}
-.card #header {
-  border: 1px #010101 solid;
-}
-.card .sub-header {
-  border-bottom: 1px #010101 solid;
-}
+/* Error: Undefined variable.
+ *   ,
+ * 6 |   background-image: linear-gradient($primary, $secondary);
+ *   |                                     ^^^^^^^^
+ *   '
+ *   index.scss 6:37  root stylesheet */
 
-.resume-icon-ul {
-  display: flex;
-  list-style: none;
-  justify-content: space-around;
-  align-items: center;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a   \2577 \a 6 \2502    background-image: linear-gradient($primary, $secondary);\d\a   \2502                                      ^^^^^^^^\a   \2575 \a   index.scss 6:37  root stylesheet";
 }
-.resume-icon-ul .resume-icon {
-  font-size: 6px;
-}
-
-body {
-  height: 100vh;
-  width: 100vw;
-  background-image: linear-gradient(#5489a8, #faab7e);
-  position: static;
-  overflow-x: hidden;
-}
-
-.App {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.App header {
-  width: auto;
-}
-.App main {
-  width: 70%;
-}
-
-.nav-ul {
-  display: flex;
-  flex-direction: row;
-  list-style: none;
-}
-
-/*# sourceMappingURL=index.css.map */

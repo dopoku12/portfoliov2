@@ -1,10 +1,11 @@
-function Projects() {
+function AboutMe() {
     return (
+
         <section className='card'>
             <header id='header'>
-                <h2>Projects</h2>
+                <h2>AboutMe</h2>
             </header>
-            <article className='projects'>
+            <article className='AboutMe'>
                 <header className='sub-header'>
 
                 </header>
@@ -18,4 +19,5 @@ function Projects() {
     )
 }
 
-export default Projects
+
+export default AboutMe
