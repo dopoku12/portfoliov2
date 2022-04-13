@@ -1,8 +1,9 @@
 import ResumeIcons from './components/ResumeIcons';
 import Education from './components/Education';
+import Skills from './components/Skills'
 function Resume() {
     return (
-        <section className='card'>
+        <section id='resume-id' className='card' >
             <header id='header'>
                 <h2>David Opoku</h2>
             </header>
@@ -26,10 +27,17 @@ function Resume() {
                     <h2>Education</h2>
                 </header>
                 <Education />
+
+                <header className='sub-header'>
+                    <h2>Skills</h2>
+                </header>
+                <Skills />
+
                 <header className='sub-header'>
                     <h2>Tech</h2>
                 </header>
                 <ResumeIcons />
+
             </article>
         </section>
     );

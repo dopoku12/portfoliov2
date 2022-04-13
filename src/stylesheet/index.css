@@ -1,17 +1,67 @@
-/* Error: Undefined variable.
- *   ,
- * 6 |   background-image: linear-gradient($primary, $secondary);
- *   |                                     ^^^^^^^^
- *   '
- *   index.scss 6:37  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a   \2577 \a 6 \2502    background-image: linear-gradient($primary, $secondary);\d\a   \2502                                      ^^^^^^^^\a   \2575 \a   index.scss 6:37  root stylesheet";
+.card {
+  box-shadow: 1px 5px 15px 1px rgba(9, 9, 9, 0.41);
+  z-index: 10px;
+  border-radius: 10px;
+  width: auto;
+  text-align: center;
+  background-color: #13131321;
 }
+.card #header {
+  color: #eecec5;
+  height: 9vh;
+}
+.card .sub-header {
+  border-top: 1px solid;
+  color: #eecec5;
+}
+
+.resume-icon-ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: space-evenly;
+  cursor: pointer;
+}
+#projects ul {
+  display: grid;
+  grid-row: 1fr 1fr 1fr;
+  align-items: center;
+}
+#projects ul li {
+  list-style: none;
+}
+
+.imgs {
+  width: 55%;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(#7ecdfa, #faab7e);
+  position: static;
+  overflow-x: hidden;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.App header {
+  width: auto;
+}
+.App main {
+  width: 70%;
+}
+
+.nav-ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+.nav-ul .nav-icons {
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=index.css.map */

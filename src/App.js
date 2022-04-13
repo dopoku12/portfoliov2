@@ -6,12 +6,12 @@ function App() {
   return (
     <div className="App">
       <main>
-        <Projects />
-        <Resume />
-        <AboutMe />
+        {<Projects />}
+        {<Resume />}
+        {<AboutMe />}
       </main>
       <footer>
-        <Nav />
+        {<Nav />}
       </footer>
     </div>
   );

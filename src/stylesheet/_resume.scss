@@ -1,26 +1,29 @@
 @use "themes";
 .card {
-  box-shadow: solid 6%, 6%, 6%, 6% rgb(255, 255, 255);
+  box-shadow: 1px 5px 15px 1px rgba(9, 9, 9, 0.41);
   z-index: 10px;
+  border-radius: 10px;
   width: auto;
   text-align: center;
-  background-color: #13131351;
+  background-color: #13131321;
   #header {
-    border: 1px linear-gradient() solid;
+    color: themes.$creamColor;
+    height: 9vh;
   }
 
   .sub-header {
-    border-bottom: 1px rgb(255, 255, 255) solid;
+    border-top: 1px solid;
+    color: themes.$creamColor;
   }
 }
 
 .resume-icon-ul {
   display: flex;
   list-style: none;
-  justify-content: space-around;
   align-items: center;
+  justify-content: space-evenly;
+  cursor: pointer;
 
   .resume-icon {
-    font-size: 6px;
   }
 }

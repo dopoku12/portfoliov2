@@ -1,0 +1,14 @@
+#projects {
+  ul {
+    display: grid;
+    grid-row: 1fr 1fr 1fr;
+    align-items: center;
+    li {
+      list-style: none;
+    }
+  }
+}
+
+.imgs {
+  width: 55%;
+}
