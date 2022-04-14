@@ -1,32 +1,34 @@
 @use "themes";
-@use "resume";
-@use "projects";
+@use "cards";
+@use "card-content";
 body {
   height: 100%;
   width: 100%;
   background-image: linear-gradient(themes.$primary, themes.$secondary);
-  position: static;
   overflow-x: hidden;
 }
 .App {
   display: flex;
   flex-direction: column;
   align-items: center;
-
   header {
     width: auto;
   }
+}
 
-  main {
-    width: 70%;
+main {
+  width: 70%;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  .nav-icons {
+    cursor: pointer;
   }
 }
 
 .nav-ul {
   display: flex;
   flex-direction: row;
-  list-style: none;
-  .nav-icons {
-    cursor: pointer;
-  }
 }

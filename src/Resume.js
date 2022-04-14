@@ -7,12 +7,11 @@ function Resume() {
             <header id='header'>
                 <h2>David Opoku</h2>
             </header>
-            <header className='sub-header'>
-                <h1>
-                    Contact
-                </h1>
-            </header>
+
             <ul>
+                <li>
+                    Riverdale, MD 20737
+                </li>
                 <li>
                     davidopoku30@gmail.com
                 </li>
@@ -29,7 +28,7 @@ function Resume() {
                 <Education />
 
                 <header className='sub-header'>
-                    <h2>Skills</h2>
+                    <h2>Highlighted Skills</h2>
                 </header>
                 <Skills />
 

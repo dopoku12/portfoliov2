@@ -5,10 +5,10 @@ import { FaPaintBrush, FaCode, FaInfo, FaRegNewspaper } from 'react-icons/fa';
 function Nav() {
   const [faIcons, setFaIcons] = useState([
     ///add behavior for click or hover
-    { id: 1, name: 'projects', iconName: FaPaintBrush, },
-    { id: 2, name: 'resume', iconName: FaRegNewspaper, },
-    { id: 3, name: 'Code', iconName: FaCode, },
-    { id: 4, name: 'aboutMe', iconName: FaInfo, }
+    { id: 0, name: 'projects', iconName: FaPaintBrush, },
+    { id: 1, name: 'resume', iconName: FaRegNewspaper, },
+    { id: 2, name: 'Code', iconName: FaCode, },
+    { id: 3, name: 'aboutMe', iconName: FaInfo, }
   ].map(
     i => (
       { ...i, status: false }

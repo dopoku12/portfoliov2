@@ -6,14 +6,11 @@ function AboutMe() {
                 <h2>AboutMe</h2>
             </header>
             <article className='AboutMe'>
-                <header className='sub-header'>
+                <p>
+                    Hello My name is David Opoku
+                    thank you for taking the time to view my portfolio
 
-                </header>
-
-                <header className='sub-header'>
-
-                </header>
-
+                </p>
             </article>
         </section>
     )
