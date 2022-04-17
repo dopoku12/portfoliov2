@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Anek+Gujarati:wght@500&family=My+Soul&family=Play&display=swap");
 .card {
   box-shadow: 1px 5px 15px 1px rgba(9, 9, 9, 0.41);
   z-index: 10px;
@@ -13,7 +14,7 @@
 }
 .card .sub-header {
   border-top: 1px solid;
-  color: #eecec5;
+  color: #957efa;
 }
 
 .project-content ul {
@@ -51,17 +52,12 @@ body {
   overflow-x: hidden;
 }
 
-.App {
+main {
+  padding-top: 10%;
+  margin-left: 10%;
+  width: 80%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-}
-.App header {
-  width: auto;
-}
-
-main {
-  width: 70%;
   text-align: center;
 }
 
@@ -73,8 +69,36 @@ ul .nav-icons {
 }
 
 .nav-ul {
+  margin: 0%;
+  padding: 0%;
+  left: 0%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  position: fixed;
+}
+
+.last {
+  color: #957efa;
+  font-family: My Soul;
+}
+
+.intro-h1 {
+  font-family: Anek Gujarati;
+  font-size: 2.5rem;
+  margin: 0%;
+  padding: 0%;
+}
+
+.intro-pg {
+  padding: 0%;
+  margin-bottom: 30%;
+  font-size: 1.5rem;
+  font-family: Anek Gujarati;
+}
+
+.text-link {
+  color: #957efa;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=index.css.map */

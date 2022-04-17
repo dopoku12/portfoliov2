@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { FiChevronDown, FiChevronUp } from 'react-icons/fi'
+import { FiChevronDown, FiChevronUp, FaCode } from 'react-icons/fi'
 
 function Projects() {
     const [projectLi, setProjectLi] = useState([

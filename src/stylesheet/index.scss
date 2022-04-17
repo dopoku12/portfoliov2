@@ -1,23 +1,20 @@
 @use "themes";
 @use "cards";
 @use "card-content";
+@use "landingpg";
 body {
   height: 100%;
   width: 100%;
   background-image: linear-gradient(themes.$primary, themes.$secondary);
   overflow-x: hidden;
 }
-.App {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  header {
-    width: auto;
-  }
-}
 
 main {
-  width: 70%;
+  padding-top: 10%;
+  margin-left: 10%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
   text-align: center;
 }
 
@@ -29,6 +26,34 @@ ul {
 }
 
 .nav-ul {
+  margin: 0%;
+  padding: 0%;
+  left: 0%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  position: fixed;
+}
+
+.last {
+  color: themes.$thirdColor;
+  font-family: themes.$fontSoul;
+}
+
+.intro-h1 {
+  font-family: themes.$fontPlay;
+  font-size: 2.5rem;
+  margin: 0%;
+  padding: 0%;
+}
+
+.intro-pg {
+  padding: 0%;
+  margin-bottom: 30%;
+  font-size: 1.5rem;
+  font-family: themes.$fontPlay;
+}
+
+.text-link {
+  color: themes.$thirdColor;
+  cursor: pointer;
 }
