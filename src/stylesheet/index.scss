@@ -3,19 +3,21 @@
 @use "card-content";
 @use "landingpg";
 body {
-  height: 100%;
-  width: 100%;
-  background-image: linear-gradient(themes.$primary, themes.$secondary);
+  height: 150vh;
+  background-image: linear-gradient(themes.$primary, themes.$secondary 70%);
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 main {
   padding-top: 10%;
   margin-left: 10%;
   width: 80%;
+
   display: flex;
   flex-direction: column;
   text-align: center;
+  margin-bottom: 60%;
 }
 
 ul {
@@ -41,14 +43,14 @@ ul {
 
 .intro-h1 {
   font-family: themes.$fontPlay;
-  font-size: 2.5rem;
+  font-size: 2.5em;
   margin: 0%;
   padding: 0%;
 }
 
 .intro-pg {
   padding: 0%;
-  margin-bottom: 30%;
+  margin-bottom: 20%;
   font-size: 1.5rem;
   font-family: themes.$fontPlay;
 }
@@ -56,4 +58,11 @@ ul {
 .text-link {
   color: themes.$thirdColor;
   cursor: pointer;
+}
+
+button {
+  border: thin;
+  p {
+    color: white;
+  }
 }

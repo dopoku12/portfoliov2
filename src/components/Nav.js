@@ -4,11 +4,11 @@ import { FaInfo, FaGithub, FaRegEnvelope, FaLinkedin, FaRegIdBadge } from 'react
 function Nav() {
     const [faIcons, setFaIcons] = useState([
         ///add behavior for click or hover
-        { id: 0, name: 'resume', iconName: FaRegIdBadge, color: 'blacK', btnColor: '' },
-        { id: 1, name: 'Linkedin', iconName: FaLinkedin, color: '7ecdfa', btnColor: '0077b5' },
-        { id: 2, name: 'Github', iconName: FaGithub, color: '424242', btnColor: '000000' },
-        { id: 3, name: 'Gmail', iconName: FaRegEnvelope, color: '82AFAA', btnColor: '82AFAA' },
-        { id: 4, name: 'aboutMe', iconName: FaInfo, color: '#7ecdfa', btnColor: '' }
+        { id: 0, name: 'Resume', iconName: FaRegIdBadge, },
+        { id: 1, name: 'Linkedin', iconName: FaLinkedin, },
+        { id: 2, name: 'Github', iconName: FaGithub, },
+        { id: 3, name: 'Email', iconName: FaRegEnvelope, },
+        { id: 4, name: 'AboutMe', iconName: FaInfo, }
     ]
         // .map(i => ({ ...i, status: false })
         // )
@@ -28,19 +28,18 @@ function Nav() {
     const navIcons = faIcons.map((i) => {
         return (
             <li key={i.id} >
-                <button background-color={i.btnColor}>
+                <button className={i.name}>
                     <p>
                         {i.status && i.name}
                         <i.iconName
                             className='nav-icons'
                             onMouseOver={() => clickEvent(i.id)}
                             onClick={() => clickEvent(i.id)}
-                            color={i.color}
                             size={20} />
                     </p>
                 </button>
 
-            </li>
+            </li >
         )
     })
 

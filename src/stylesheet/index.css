@@ -1,4 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Anek+Gujarati:wght@500&family=My+Soul&family=Play&display=swap");
+.Resume {
+  background-color: grey;
+}
+
+.Linkedin {
+  background-color: #0077b5;
+}
+
+.Github {
+  background-color: #000000;
+}
+
+.Email {
+  background-color: #77cdc3;
+}
+
+.AboutMe {
+  background-color: #0077b5;
+}
+
 .card {
   box-shadow: 1px 5px 15px 1px rgba(9, 9, 9, 0.41);
   z-index: 10px;
@@ -46,10 +66,10 @@
 }
 
 body {
-  height: 100%;
-  width: 100%;
-  background-image: linear-gradient(#7ecdfa, #faab7e);
+  height: 150vh;
+  background-image: linear-gradient(#7ecdfa, #faab7e 70%);
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 main {
@@ -59,6 +79,7 @@ main {
   display: flex;
   flex-direction: column;
   text-align: center;
+  margin-bottom: 60%;
 }
 
 ul {
@@ -84,14 +105,14 @@ ul .nav-icons {
 
 .intro-h1 {
   font-family: Anek Gujarati;
-  font-size: 2.5rem;
+  font-size: 2.5em;
   margin: 0%;
   padding: 0%;
 }
 
 .intro-pg {
   padding: 0%;
-  margin-bottom: 30%;
+  margin-bottom: 20%;
   font-size: 1.5rem;
   font-family: Anek Gujarati;
 }
@@ -99,6 +120,13 @@ ul .nav-icons {
 .text-link {
   color: #957efa;
   cursor: pointer;
+}
+
+button {
+  border: thin;
+}
+button p {
+  color: white;
 }
 
 /*# sourceMappingURL=index.css.map */

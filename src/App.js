@@ -5,13 +5,8 @@ import Nav from "./components/Nav"
 import { FaPaintBrush } from 'react-icons/fa'
 function App() {
 
-
   return (
     <div className="App">
-
-
-
-
 
       <Nav />
       <main >
@@ -21,11 +16,11 @@ function App() {
         </header>
         <p className="intro-pg">
 
-          A Front-End web Developer/Designer currently based in Maryland,USA
+          A Front-End web Developer/Designer currently based in Washington DC-Baltimore Area,USA
           <span className="text-link"> hit me Up</span> to make some Magic
         </p>
         <footer>
-          <FaPaintBrush color='#957efa' />
+          <FaPaintBrush/>
           <h1>View Projects</h1>
         </footer>
       </main>
