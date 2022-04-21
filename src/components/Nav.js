@@ -4,11 +4,11 @@ import { FaInfo, FaGithub, FaRegEnvelope, FaLinkedin, FaRegIdBadge } from 'react
 function Nav() {
     const [faIcons, setFaIcons] = useState([
         ///add behavior for click or hover
-        { id: 0, name: 'Resume', iconName: FaRegIdBadge, },
-        { id: 1, name: 'Linkedin', iconName: FaLinkedin, },
-        { id: 2, name: 'Github', iconName: FaGithub, },
-        { id: 3, name: 'Email', iconName: FaRegEnvelope, },
-        { id: 4, name: 'AboutMe', iconName: FaInfo, }
+        { id: 0, name: 'Resume', iconName: FaRegIdBadge, pathName: "" },
+        { id: 1, name: 'Linkedin', iconName: FaLinkedin, pathName: "" },
+        { id: 2, name: 'Github', iconName: FaGithub, pathName: "" },
+        { id: 3, name: 'Email', iconName: FaRegEnvelope, pathName: "" },
+        { id: 4, name: 'AboutMe', iconName: FaInfo, pathName: "" }
     ]
         // .map(i => ({ ...i, status: false })
         // )
@@ -22,8 +22,6 @@ function Nav() {
         console.log(faIcons[0].status);
     }
     faIcons.map(i => console.log(Object.values(i)))
-
-
 
     const navIcons = faIcons.map((i) => {
         return (
@@ -42,10 +40,6 @@ function Nav() {
             </li >
         )
     })
-
-
-
-
 
     return (
         <aside>

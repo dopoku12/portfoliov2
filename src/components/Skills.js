@@ -1,4 +1,4 @@
-function Skills(props) {
+function Skills() {
     return (
         <ul>
             <h1>

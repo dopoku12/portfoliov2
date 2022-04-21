@@ -1,35 +1,34 @@
-import Projects from "./Projects";
-import Resume from "./Resume";
-import AboutMe from "./AboutMe";
-import Nav from "./components/Nav"
-import { FaPaintBrush } from 'react-icons/fa'
+import Home from "./pages/Home"
+import Projects from "./pages/Projects";
+import Resume from "./pages/Resume";
+import AboutMe from "./pages/AboutMe";
+import ErrorPage from "./pages/ErrorPage"
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
 function App() {
 
   return (
     <div className="App">
 
-      <Nav />
-      <main >
-        <header className="intro">
-          <h1 className='intro-h1'> Welcome, I am  David  <span className='last'>Opoku </span>
-          </h1>
-        </header>
-        <p className="intro-pg">
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />}>
+            <Projects />
+          </Route>
+        </Routes>
 
-          A Front-End web Developer/Designer currently based in Washington DC-Baltimore Area,USA
-          <span className="text-link"> hit me Up</span> to make some Magic
-        </p>
-        <footer>
-          <FaPaintBrush/>
-          <h1>View Projects</h1>
-        </footer>
-      </main>
+        <Routes>
+          <Route path="/">
+            <Resume />
+          </Route>
+        </Routes>
+        <Routes>
+          <Route path="/">
+            <AboutMe />
+          </Route>
+        </Routes>
+      </Router>
 
-      {
-        //  <Projects />
-        // <Resume />
-        // <AboutMe />
-      }
     </div>
   );
 }

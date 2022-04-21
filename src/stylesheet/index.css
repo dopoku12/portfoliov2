@@ -79,7 +79,6 @@ main {
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin-bottom: 60%;
 }
 
 ul {
@@ -90,6 +89,7 @@ ul .nav-icons {
 }
 
 .nav-ul {
+  top: 0%;
   margin: 0%;
   padding: 0%;
   left: 0%;
@@ -116,6 +116,9 @@ ul .nav-icons {
   font-size: 1.5rem;
   font-family: Anek Gujarati;
 }
+.intro-pg:hover {
+  color: azure;
+}
 
 .text-link {
   color: #957efa;
@@ -127,6 +130,26 @@ button {
 }
 button p {
   color: white;
+}
+
+@media (max-width: 607px) {
+  main {
+    margin-left: 20%;
+  }
+}
+@media (max-width: 303px) {
+  main {
+    margin-left: 27%;
+    width: 75%;
+  }
+
+  .intro-h1 {
+    font-size: 2rem;
+  }
+
+  .intro-pg {
+    font-size: 1.2rem;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

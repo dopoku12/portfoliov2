@@ -1,6 +1,6 @@
-import ResumeIcons from './components/ResumeIcons';
-import Education from './components/Education';
-import Skills from './components/Skills'
+import ResumeIcons from '../components/ResumeIcons';
+import Education from '../components/Education';
+import Skills from '../components/Skills'
 function Resume() {
     return (
         <section id='resume-id' className='card' >
