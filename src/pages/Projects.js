@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { FiChevronDown, FiChevronUp, FaCode } from 'react-icons/fi'
+import Nav from "../components/Nav"
 
 function Projects() {
     const [projectLi, setProjectLi] = useState([
@@ -20,37 +21,41 @@ function Projects() {
     }
 
     return (
-        <section id='projects' className='card'>
-            <header id='header'>
-                <h2>Projects</h2>
-            </header>
-            <article className="project-content" >
-                <ul>{
-                    projectLi.map
-                        (i =>
-                            <li key={i.id}>
-                                <img src={i.imgName} alt="project-img" className='imgs' />
-                                <div className='img-overlay'>
-                                    <header >
-                                        {i.projectName}
-                                    </header>
-                                    {
-                                        i.status === false ?
-                                            <p> Description <FiChevronDown
-                                                onClick={() => clickChange(i.id)} />
-                                            </p> :
-                                            <p>
-                                                {i.description}
-                                                <FiChevronUp
-                                                    onClick={() => clickReturn(i.id)} />
-                                            </p>
-                                    }
-                                </div>
-                            </li>
-                        )}
-                </ul>
-            </article>
-        </section >
+        <div className='Projects'>
+            <Nav />
+
+            <section id='projects' className='card'>
+                <header id='header'>
+                    <h2>Projects</h2>
+                </header>
+                <article className="project-content" >
+                    <ul>{
+                        projectLi.map
+                            (i =>
+                                <li key={i.id}>
+                                    <img src={i.imgName} alt="project-img" className='imgs' />
+                                    <div className='img-overlay'>
+                                        <header >
+                                            {i.projectName}
+                                        </header>
+                                        {
+                                            i.status === false ?
+                                                <p> Description <FiChevronDown
+                                                    onClick={() => clickChange(i.id)} />
+                                                </p> :
+                                                <p>
+                                                    {i.description}
+                                                    <FiChevronUp
+                                                        onClick={() => clickReturn(i.id)} />
+                                                </p>
+                                        }
+                                    </div>
+                                </li>
+                            )}
+                    </ul>
+                </article>
+            </section >
+        </div>
     )
 }
 

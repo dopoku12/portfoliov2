@@ -1,52 +1,73 @@
 import { useState } from 'react';
-import { FaInfo, FaGithub, FaRegEnvelope, FaLinkedin, FaRegIdBadge } from 'react-icons/fa';
-
+import { FaInfo, FaGithub, FaRegEnvelope, FaLinkedin, FaRegIdBadge, FaHome } from 'react-icons/fa';
+import { Link } from "react-router-dom"
 function Nav() {
     const [faIcons, setFaIcons] = useState([
-        ///add behavior for click or hover
-        { id: 0, name: 'Resume', iconName: FaRegIdBadge, pathName: "" },
-        { id: 1, name: 'Linkedin', iconName: FaLinkedin, pathName: "" },
-        { id: 2, name: 'Github', iconName: FaGithub, pathName: "" },
-        { id: 3, name: 'Email', iconName: FaRegEnvelope, pathName: "" },
-        { id: 4, name: 'AboutMe', iconName: FaInfo, pathName: "" }
-    ]
-        // .map(i => ({ ...i, status: false })
-        // )
-    )
-
+        { id: 0, name: 'Linkedin', iconName: FaLinkedin, pathName: "https://www.linkedin.com/in/david-opoku-7008721b7/" },
+        { id: 1, name: 'Github', iconName: FaGithub, pathName: "https://github.com/dopoku12" },
+        { id: 2, name: 'Email', iconName: FaRegEnvelope, },
+        { id: 3, name: 'Home', iconName: FaHome, pathName: "/" },
+        { id: 4, name: 'Resume', iconName: FaRegIdBadge, pathName: "/Resume" },
+        { id: 5, name: 'AboutMe', iconName: FaInfo, pathName: "/AboutMe" }
+        // .map(i => ({ ...i, status: false }))
+    ])
     function clickEvent(id) {
         const change = faIcons.map(i => i.id === id ? { ...i, status: true } :
             { ...i, status: false }
         )
         setFaIcons(change)
-        console.log(faIcons[0].status);
     }
-    faIcons.map(i => console.log(Object.values(i)))
 
-    const navIcons = faIcons.map((i) => {
+
+    const outSrc = faIcons.filter(i => (i.id < 3)).map(i => {
         return (
-            <li key={i.id} >
-                <button className={i.name}>
-                    <p>
-                        {i.status && i.name}
-                        <i.iconName
-                            className='nav-icons'
-                            onMouseOver={() => clickEvent(i.id)}
-                            onClick={() => clickEvent(i.id)}
-                            size={20} />
-                    </p>
-                </button>
+            <a key={i.id} href={i.pathName}>
+                <li >
+                    <button className={i.name}>
+                        <p>
+                            {i.status && i.name}
+                            <i.iconName
+                                className='nav-icons'
+                                onMouseOver={() => clickEvent(i.id)}
 
-            </li >
+                                onClick={() => clickEvent(i.id)}
+                                size={20} />
+                        </p>
+                    </button>
+                </li>
+            </a>
         )
     })
+
+    const linkSrc = faIcons.filter(i => (i.id > 2))
+        .map(i => {
+            return (
+                <Link to={i.pathName} key={i.id}>
+                    <li >
+                        <button className={i.name}>
+                            <p>
+                                {i.status && i.name}
+                                <i.iconName className='nav-icons'
+                                    onMouseOver={() => clickEvent(i.id)}
+                                    onClick={() => clickEvent(i.id)}
+                                    size={20} />
+                            </p>
+                        </button>
+                    </li>
+                </Link>
+            )
+        })
 
     return (
         <aside>
             <nav>
                 <ul className='nav-ul'>
+
                     {
-                        navIcons
+                        outSrc
+                    }
+                    {
+                        linkSrc
                     }
                 </ul>
             </nav>

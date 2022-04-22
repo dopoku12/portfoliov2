@@ -3,31 +3,32 @@ import Projects from "./pages/Projects";
 import Resume from "./pages/Resume";
 import AboutMe from "./pages/AboutMe";
 import ErrorPage from "./pages/ErrorPage"
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
 
   return (
     <div className="App">
 
-      <Router>
+      <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Home />}>
-            <Projects />
-          </Route>
+          <Route path="/" element={<Home />} />
         </Routes>
 
         <Routes>
-          <Route path="/">
-            <Resume />
-          </Route>
+          <Route path="/Resume" element={<Resume />} />
         </Routes>
+
         <Routes>
-          <Route path="/">
-            <AboutMe />
-          </Route>
+          <Route path="/Projects" element={<Projects />} />
         </Routes>
-      </Router>
+
+
+        <Routes>
+          <Route path="/AboutMe" element={<AboutMe />} />
+        </Routes>
+
+      </BrowserRouter>
 
     </div>
   );
