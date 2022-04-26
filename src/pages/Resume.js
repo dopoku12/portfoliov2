@@ -4,9 +4,9 @@ import Nav from "../components/Nav"
 import ResumeIcons from '../components/ResumeIcons';
 function Resume() {
     return (
-        <div className='card'>
+        <div className='card-container'>
             <Nav />
-            <section id='resume-id'>
+            <section className='card'>
                 <header id='header'>
                     <h2>David Opoku</h2>
                 </header>
@@ -24,7 +24,7 @@ function Resume() {
                     </li>
                 </ul>
 
-                <article className='resume'>
+                <article className='resume-content'>
                     <header className='sub-header'>
                         <h2>Education</h2>
                     </header>
@@ -34,10 +34,6 @@ function Resume() {
                         <h2>Highlighted Skills</h2>
                     </header>
                     <Skills />
-
-                    <header className='sub-header'>
-                        <h2>Tech</h2>
-                    </header>
                     <ResumeIcons />
 
                 </article>

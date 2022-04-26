@@ -23,8 +23,16 @@
   height: 100%;
 }
 
+.resume-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  .sub-header {
+    border-top: 0.1rem solid;
+  }
+}
+
 .resume-icon-ul {
   display: flex;
-  list-style: none;
-  justify-content: space-evenly;
+  padding-right: 20%;
 }

@@ -12,7 +12,6 @@ function ResumeIcons() {
         { id: 4, name: 'Sass', iconName: SiSass, color: 'cc6699', },
         { id: 5, name: 'Github', iconName: SiGithub, color: '424242', },
         { id: 6, name: 'Tailwind ', iconName: SiTailwindcss, color: '78cac3', },
-        { id: 7, name: 'Leaflet', iconName: SiLeaflet, color: '4E9B47 ' },
     ].map(i => ({ ...i, status: false }))
     )
 

@@ -7,8 +7,12 @@ $fontPlay: Anek Gujarati;
 $fontRoboto: Play;
 $fontSoul: My Soul;
 
+.Home {
+  background-color: $secondary;
+}
+
 .Resume {
-  background-color: grey;
+  background-color: $primary;
 }
 .Linkedin {
   background-color: #0077b5;

@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Anek+Gujarati:wght@500&family=My+Soul&family=Play&display=swap");
+.Home {
+  background-color: #faab7e;
+}
+
 .Resume {
-  background-color: grey;
+  background-color: #7ecdfa;
 }
 
 .Linkedin {
@@ -19,23 +23,26 @@
   background-color: #0077b5;
 }
 
+.card-container {
+  margin-top: 1%;
+  padding-left: 20%;
+  padding-right: 5%;
+}
+
 .card {
   box-shadow: 1px 5px 15px 1px rgba(9, 9, 9, 0.41);
-  z-index: 10px;
+  z-index: 10em;
   border-radius: 10px;
-  width: 40%;
-  left: 0%;
+  align-items: center;
+  width: auto;
   background-color: #13131306;
 }
 .card #header {
+  text-align: center;
   color: white;
   border: solid 5px white;
   background-color: #faab7e;
   height: 9vh;
-}
-.card .sub-header {
-  border-top: 1px solid;
-  color: #957efa;
 }
 
 .project-content ul {
@@ -60,23 +67,32 @@
   height: 100%;
 }
 
+.resume-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.resume-content .sub-header {
+  border-top: 0.1rem solid;
+}
+
 .resume-icon-ul {
   display: flex;
-  list-style: none;
-  justify-content: space-evenly;
+  padding-right: 20%;
 }
 
 body {
-  height: 150vh;
   background-image: linear-gradient(#7ecdfa, #faab7e 70%);
-  overflow-x: hidden;
-  overflow-y: hidden;
+  height: auto;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 main {
   padding-top: 10%;
-  margin-left: 10%;
-  width: 80%;
+  margin-left: 20%;
+  width: 60%;
   display: flex;
   flex-direction: column;
   text-align: center;

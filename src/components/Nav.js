@@ -11,9 +11,15 @@ function Nav() {
         { id: 5, name: 'AboutMe', iconName: FaInfo, pathName: "/AboutMe" }
         // .map(i => ({ ...i, status: false }))
     ])
-    function clickEvent(id) {
+    function onMouseOver(id) {
         const change = faIcons.map(i => i.id === id ? { ...i, status: true } :
             { ...i, status: false }
+        )
+        setFaIcons(change)
+    }
+    function onMouseOut(id) {
+        const change = faIcons.map(i => i.id === id ? { ...i, status: false } :
+            { ...i, status: null }
         )
         setFaIcons(change)
     }
@@ -28,9 +34,9 @@ function Nav() {
                             {i.status && i.name}
                             <i.iconName
                                 className='nav-icons'
-                                onMouseOver={() => clickEvent(i.id)}
+                                onMouseOver={() => onMouseOver(i.id)}
 
-                                onClick={() => clickEvent(i.id)}
+                                onMouseOut={() => onMouseOut(i.id)}
                                 size={20} />
                         </p>
                     </button>
@@ -48,8 +54,8 @@ function Nav() {
                             <p>
                                 {i.status && i.name}
                                 <i.iconName className='nav-icons'
-                                    onMouseOver={() => clickEvent(i.id)}
-                                    onClick={() => clickEvent(i.id)}
+                                    onMouseOver={() => onMouseOver(i.id)}
+                                    onMouseOut={() => onMouseOut(i.id)}
                                     size={20} />
                             </p>
                         </button>

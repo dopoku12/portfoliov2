@@ -1,23 +1,23 @@
 @use "themes";
 
+.card-container {
+  margin-top: 1%;
+  padding-left: 20%;
+  padding-right: 5%;
+}
+
 .card {
   box-shadow: 1px 5px 15px 1px rgba(9, 9, 9, 0.41);
-  z-index: 10px;
+  z-index: 10em;
   border-radius: 10px;
-  width: 40%;
-
-  left: 0%;
-
+  align-items: center;
+  width: auto;
   background-color: #13131306;
   #header {
+    text-align: center;
     color: white;
     border: solid 5px white;
     background-color: themes.$secondary;
     height: 9vh;
-  }
-
-  .sub-header {
-    border-top: 1px solid;
-    color: themes.$thirdColor;
   }
 }

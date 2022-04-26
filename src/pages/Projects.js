@@ -21,10 +21,10 @@ function Projects() {
     }
 
     return (
-        <div className='Projects'>
+        <div className='card-container' >
             <Nav />
 
-            <section id='projects' className='card'>
+            <section className='card' >
                 <header id='header'>
                     <h2>Projects</h2>
                 </header>
