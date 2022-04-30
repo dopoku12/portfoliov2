@@ -1,7 +1,6 @@
 import Education from '../components/Education';
 import Skills from '../components/Skills'
 import Nav from "../components/Nav"
-import ResumeIcons from '../components/ResumeIcons';
 function Resume() {
     return (
         <div className='card-container'>
@@ -34,7 +33,6 @@ function Resume() {
                         <h2>Highlighted Skills</h2>
                     </header>
                     <Skills />
-                    <ResumeIcons />
 
                 </article>
             </section>

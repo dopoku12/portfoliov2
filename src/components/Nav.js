@@ -29,14 +29,14 @@ function Nav() {
         return (
             <a key={i.id} href={i.pathName}>
                 <li >
-                    <button className={i.name}>
+                    <button className={i.name} onMouseOver={() => onMouseOver(i.id)}
+
+                        onMouseOut={() => onMouseOut(i.id)}>
                         <p>
                             {i.status && i.name}
                             <i.iconName
                                 className='nav-icons'
-                                onMouseOver={() => onMouseOver(i.id)}
 
-                                onMouseOut={() => onMouseOut(i.id)}
                                 size={20} />
                         </p>
                     </button>
@@ -50,12 +50,12 @@ function Nav() {
             return (
                 <Link to={i.pathName} key={i.id}>
                     <li >
-                        <button className={i.name}>
+                        <button className={i.name} onMouseOver={() => onMouseOver(i.id)}
+                            onMouseOut={() => onMouseOut(i.id)}>
                             <p>
                                 {i.status && i.name}
                                 <i.iconName className='nav-icons'
-                                    onMouseOver={() => onMouseOver(i.id)}
-                                    onMouseOut={() => onMouseOut(i.id)}
+
                                     size={20} />
                             </p>
                         </button>

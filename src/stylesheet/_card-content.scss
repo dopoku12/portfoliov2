@@ -1,19 +1,24 @@
 .project-content {
   ul {
-    position: relative;
-    align-items: center;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-
-    .imgs {
-      width: 50%;
-      display: block;
+    align-items: center;
+    li {
+      display: flex;
+      margin: 5%;
+      position: relative;
+      width: 100%;
     }
   }
 }
 
-.image-overlay {
+.imgs {
+  width: 100%;
+  display: block;
+}
+
+.img-overlay {
+  opacity: 0;
   position: absolute;
   background: rgba(0, 0, 0, 0.6);
   color: white;
@@ -21,6 +26,17 @@
   left: 0;
   width: 100%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  header {
+    font-size: 1rem;
+  }
+}
+
+.img-overlay:hover {
+  opacity: 1;
 }
 
 .resume-content {

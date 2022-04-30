@@ -13,8 +13,8 @@ function Home() {
                 </header>
                 <p className="intro-pg">
 
-                    A Front-End web Developer/Designer currently based in Washington DC-Baltimore Area
-                    <span className="text-link"> hit me Up</span> to make some Magic
+                    A Front-End web Developer/Designer currently based in the Washington DC-Baltimore Area let's come together &
+                    <span className="text-link">  Make Something Great</span>
                 </p>
                 <footer>
                     <Link to="/Projects">
