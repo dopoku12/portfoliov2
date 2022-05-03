@@ -3,13 +3,41 @@ import { FaInfo, FaGithub, FaRegEnvelope, FaLinkedin, FaRegIdBadge, FaHome } fro
 import { Link } from "react-router-dom"
 function Nav() {
     const [faIcons, setFaIcons] = useState([
-        { id: 0, name: 'Linkedin', iconName: FaLinkedin, pathName: "https://www.linkedin.com/in/david-opoku-7008721b7/" },
-        { id: 1, name: 'Github', iconName: FaGithub, pathName: "https://github.com/dopoku12" },
-        { id: 2, name: 'Email', iconName: FaRegEnvelope, },
-        { id: 3, name: 'Home', iconName: FaHome, pathName: "/" },
-        { id: 4, name: 'Resume', iconName: FaRegIdBadge, pathName: "/Resume" },
-        { id: 5, name: 'AboutMe', iconName: FaInfo, pathName: "/AboutMe" }
-        // .map(i => ({ ...i, status: false }))
+        {
+            id: 0,
+            name: 'Linkedin',
+            iconName: FaLinkedin,
+            pathName: "https://www.linkedin.com/in/david-opoku-7008721b7/"
+        },
+        {
+            id: 1,
+            name: 'Github',
+            iconName: FaGithub,
+            pathName: "https://github.com/dopoku12"
+        },
+        {
+            id: 2,
+            name: 'Email',
+            iconName: FaRegEnvelope,
+        },
+        {
+            id: 3,
+            name: 'Home',
+            iconName: FaHome,
+            pathName: "/"
+        },
+        {
+            id: 4,
+            name: 'Resume',
+            iconName: FaRegIdBadge,
+            pathName: "/Resume"
+        },
+        {
+            id: 5,
+            name: 'AboutMe',
+            iconName: FaInfo,
+            pathName: "/AboutMe"
+        }
     ])
     function onMouseOver(id) {
         const change = faIcons.map(i => i.id === id ? { ...i, status: true } :

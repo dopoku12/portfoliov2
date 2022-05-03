@@ -2,14 +2,42 @@ import { SiBootstrap, SiReact, SiJavascript, SiSass, SiGithub, SiTailwindcss, Si
 
 function Skills() {
     const iconskills =
-        [
-            { id: 1, name: 'React.js', iconName: SiReact, color: '1de6f8', },
-            { id: 2, name: 'Node.js', iconName: SiNodedotjs, color: '4E9B47 ', },
-            { id: 3, name: 'Bootstrap', iconName: SiBootstrap, color: '563d7c', },
-            { id: 4, name: 'Sass', iconName: SiSass, color: 'cc6699', },
-            { id: 5, name: 'Github', iconName: SiGithub, color: '424242', },
-            { id: 6, name: 'Tailwind ', iconName: SiTailwindcss, color: '78cac3', }
-        ]
+        [{
+            id: 1,
+            name: 'React.js',
+            iconName: SiReact,
+            color: '1de6f8',
+        },
+        {
+            id: 2,
+            name: 'Node.js',
+            iconName: SiNodedotjs,
+            color: '4E9B47 ',
+        },
+        {
+            id: 3,
+            name: 'Bootstrap',
+            iconName: SiBootstrap,
+            color: '563d7c',
+        },
+        {
+            id: 4,
+            name: 'Sass',
+            iconName: SiSass,
+            color: 'cc6699',
+        },
+        {
+            id: 5,
+            name: 'Github',
+            iconName: SiGithub,
+            color: '424242',
+        },
+        {
+            id: 6,
+            name: 'Tailwind ',
+            iconName: SiTailwindcss,
+            color: '78cac3',
+        }]
 
 
     const skillsLi = [

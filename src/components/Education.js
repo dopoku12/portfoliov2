@@ -2,9 +2,14 @@ function Education() {
     return (
         <article className='Education'>
 
-            <h1 className="edu-type">BootCamp</h1>
-            <p>Vanderbilt University Coding Bootcamp - Nashville, TN
+            <h1 className="edu-type"> Coding BootCamps</h1>
+            <p>Vanderbilt University Coding BootCamp - Nashville, TN
                 September 2021 to March 2022</p>
+
+            <p>
+                Generation USA Jr.WebDeveloper Coding BootCamp - Washington, D.C
+                2022
+            </p>
             <h1 className="edu-type">2 years of Computer Science</h1>
             <p>Wilmington University - New Castle, DE
 
