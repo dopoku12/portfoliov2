@@ -1,15 +1,17 @@
-.project-content {
-  ul {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    li {
-      display: flex;
-      margin: 5%;
-      position: relative;
-      width: 100%;
-    }
-  }
+@use "themes";
+
+header {
+  text-align: center;
+}
+
+.project-btn {
+  margin: 6%;
+  background-color: themes.$primary;
+}
+
+.img-container {
+  position: relative;
+  width: 100%;
 }
 
 .imgs {

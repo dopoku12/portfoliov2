@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { FiChevronDown, FiChevronUp, FaCode } from 'react-icons/fi'
+import { FaCode } from 'react-icons/fa'
 import Nav from "../components/Nav"
 
 function Projects() {
@@ -30,7 +30,8 @@ function Projects() {
             projectName: 'Country Search',
             description: 'A scratch'
         },
-    ].map(i => ({ ...i, status: false })
+    ].map(i => ({ ...i, status: false, iconName: FaCode })
+
     ))
 
     function displayModal(id) {
@@ -48,40 +49,48 @@ function Projects() {
     const projects = projectLi.map
         (i =>
             <li key={i.id} >
-                <div className='project-i'>
-                    <a href={i.link}>
-                    </a>
+                <div className='projects-card'>
                     <div className='img-container' >
-                        <img src={i.imgName}
-                            alt="project-img"
-                            className='imgs' />
+                        <a href={i.link}>
+                            <img src={i.imgName}
+                                alt="project-img"
+                                className='imgs' />
 
-                        <div className='img-overlay'>
-                            <header >
-                                {i.projectName}
-                            </header>
-                        </div>
-
+                            <div className='img-overlay'>
+                                <header >
+                                    {i.projectName}
+                                </header>
+                            </div>
+                        </a>
                     </div>
-                    <button>
-                        view Description
+
+                    <button className='project-btn'
+                        onClick={() => displayModal(i.id)} >
+                        View Description
+                    </button>
+
+                    <button className='project-btn'>
+                        <a href={i.code}>
+                            <i.iconName size={20} color={'white'} />
+                            View Code
+                        </a>
                     </button>
                 </div>
             </li>
-
-
         )
 
     return (
-        <div className='card-container' >
+        <div  >
             <Nav />
 
-            <section className='card' >
-                <header id='header'>
-                    <h2>Projects</h2>
+            <section className="project-content">
+                <header>
+                    <h1>
+                        Projects
+                    </h1>
                 </header>
-                <article className="project-content" >
-                    <ul>
+                <article >
+                    <ul >
                         {projects}
                     </ul>
                 </article>

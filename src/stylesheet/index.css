@@ -45,14 +45,22 @@
   height: 9vh;
 }
 
-.project-content ul {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+.projects-card {
+  box-shadow: 1px 5px 15px 1px rgba(9, 9, 9, 0.41);
+  margin: 10%;
+  width: 30%;
 }
-.project-content ul li {
-  display: flex;
-  margin: 5%;
+
+header {
+  text-align: center;
+}
+
+.project-btn {
+  margin: 6%;
+  background-color: #7ecdfa;
+}
+
+.img-container {
   position: relative;
   width: 100%;
 }
@@ -113,6 +121,10 @@ main {
   display: flex;
   flex-direction: column;
   text-align: center;
+}
+
+a {
+  text-decoration: none;
 }
 
 ul {
