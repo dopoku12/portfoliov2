@@ -6,6 +6,10 @@ header {
 
 .project-btn {
   margin: 6%;
+  color: white;
+  .code-link {
+    color: white;
+  }
   background-color: themes.$primary;
 }
 

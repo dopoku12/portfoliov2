@@ -70,7 +70,7 @@ function Projects() {
                     </button>
 
                     <button className='project-btn'>
-                        <a href={i.code}>
+                        <a className='code-link' href={i.code}>
                             <i.iconName size={20} color={'white'} />
                             View Code
                         </a>

@@ -57,7 +57,11 @@ header {
 
 .project-btn {
   margin: 6%;
+  color: white;
   background-color: #7ecdfa;
+}
+.project-btn .code-link {
+  color: white;
 }
 
 .img-container {
