@@ -2,7 +2,7 @@
 @use "cards";
 @use "card-content";
 @use "landingpg";
-
+@use "modal";
 body {
   background-image: linear-gradient(themes.$primary, themes.$secondary 70%);
   height: auto;

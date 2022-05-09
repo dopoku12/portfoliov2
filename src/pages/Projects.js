@@ -27,12 +27,22 @@ function Projects() {
             imgName: '/projects/country-search.png',
             link: ' https://dopoku12.github.io/country-search/',
             code: 'https://github.com/dopoku12/country-search',
-            projectName: 'Country Search',
+            projectName: 'Country-Search',
             description: 'A scratch'
         },
     ].map(i => ({ ...i, status: false, iconName: FaCode })
 
     ))
+
+    const modalBox = projectLi.map(i =>
+        <div className='modal-backdrop' >
+            <div className='modalBox'>
+                <p className='description'>
+                    {i.description}
+                </p>
+            </div>
+        </div>
+    )
 
     function displayModal(id) {
         const change = projectLi.map(i => i.id === id ? { ...i, status: true } : i)
@@ -44,8 +54,6 @@ function Projects() {
         setProjectLi(reTurn)
     }
 
-
-
     const projects = projectLi.map
         (i =>
             <li key={i.id} >
@@ -53,6 +61,7 @@ function Projects() {
                     <div className='img-container' >
                         <a href={i.link}>
                             <img src={i.imgName}
+                                id={i.projectName}
                                 alt="project-img"
                                 className='imgs' />
 
@@ -68,7 +77,6 @@ function Projects() {
                         onClick={() => displayModal(i.id)} >
                         View Description
                     </button>
-
                     <button className='project-btn'>
                         <a className='code-link' href={i.code}>
                             <i.iconName size={20} color={'white'} />
@@ -80,7 +88,8 @@ function Projects() {
         )
 
     return (
-        <div  >
+        <div>
+
             <Nav />
 
             <section className="project-content">
@@ -93,8 +102,10 @@ function Projects() {
                     <ul >
                         {projects}
                     </ul>
+                    {modalBox}
                 </article>
             </section >
+
         </div>
     )
 }
