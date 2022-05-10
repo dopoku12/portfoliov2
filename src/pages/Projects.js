@@ -30,28 +30,41 @@ function Projects() {
             projectName: 'Country-Search',
             description: 'A scratch'
         },
-    ].map(i => ({ ...i, status: false, iconName: FaCode })
+    ].map(i => ({ ...i, iconName: FaCode, status: false })
 
     ))
 
-    const modalBox = projectLi.map(i =>
-        <div className='modal-backdrop' >
-            <div className='modalBox'>
-                <p className='description'>
-                    {i.description}
-                </p>
+
+
+    const modalBox = projectLi.map(i => {
+
+        return (
+            i.status &&
+            <div key={i.id} className='modal-backdrop' onClick={exitModal} >
+                <div className='modalBox'>
+                    <button className='close' onClick={exitModal}>
+                        X
+                    </button>
+                    <p className='description'>
+                        {i.description}
+                    </p>
+                </div>
             </div>
-        </div>
+        )
+    }
+
     )
 
     function displayModal(id) {
         const change = projectLi.map(i => i.id === id ? { ...i, status: true } : i)
+        console.log('display:', projectLi[1].status);
         setProjectLi(change)
     }
 
-    function exitModal(id) {
-        const reTurn = projectLi.map(i => i.id === id ? { ...i, status: false } : i)
+    function exitModal() {
+        const reTurn = projectLi.map(i => i.id && { ...i, status: false })
         setProjectLi(reTurn)
+        console.log('exit:', projectLi[1].status);
     }
 
     const projects = projectLi.map
@@ -88,23 +101,24 @@ function Projects() {
         )
 
     return (
-        <div>
+        <div className='project-body'>
 
             <Nav />
-
             <section className="project-content">
-                <header>
-                    <h1>
-                        Projects
-                    </h1>
-                </header>
                 <article >
+                    <header>
+                        <h1>
+                            Projects
+                        </h1>
+                    </header>
                     <ul >
                         {projects}
                     </ul>
-                    {modalBox}
                 </article>
             </section >
+            {
+                modalBox
+            }
 
         </div>
     )

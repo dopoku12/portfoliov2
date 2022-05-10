@@ -2,11 +2,14 @@
 @use "cards";
 @use "card-content";
 @use "landingpg";
-@use "modal";
+@use "projectBdrop";
 body {
   background-image: linear-gradient(themes.$primary, themes.$secondary 70%);
   height: auto;
   margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
