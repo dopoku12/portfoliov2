@@ -4,7 +4,7 @@
 @use "landingpg";
 @use "projectBdrop";
 body {
-  background-image: linear-gradient(themes.$primary, themes.$secondary 70%);
+  background-image: linear-gradient(#2f80ed, #b2ffda);
   height: auto;
   margin: 0;
   display: flex;

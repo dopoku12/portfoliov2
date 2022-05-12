@@ -7,7 +7,7 @@
 }
 
 .card {
-  box-shadow: 1px 5px 15px 1px rgba(9, 9, 9, 0.41);
+  box-shadow: 1px 5px 15px 10px rgba(0, 0, 0, 0.044);
   z-index: 10em;
   padding-top: 2%;
   border-radius: 2%;
@@ -19,7 +19,7 @@
     text-align: center;
     color: white;
     border: solid 5px white;
-    background-color: themes.$secondary;
+    background-color: themes.$primary;
     height: 10vh;
   }
 }
