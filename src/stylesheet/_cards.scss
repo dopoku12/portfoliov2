@@ -7,7 +7,7 @@
 }
 
 .card {
-  box-shadow: 1px 5px 15px 10px rgba(0, 0, 0, 0.044);
+  box-shadow: 1px 5px 15px 1px rgba(9, 9, 9, 0.41);
   z-index: 10em;
   padding-top: 2%;
   border-radius: 2%;
@@ -15,12 +15,9 @@
   width: auto;
   background-color: #13131306;
   margin-bottom: 10%;
-  #header {
+  font-family: themes.$fontPlay;
+  .header {
     text-align: center;
-    color: white;
-    border: solid 5px white;
-    background-color: themes.$primary;
-    height: 10vh;
   }
 }
 
@@ -29,4 +26,5 @@
   margin: 8%;
   width: 30%;
   border-radius: 2%;
+  font-family: themes.$fontRoboto;
 }

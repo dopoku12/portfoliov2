@@ -64,7 +64,6 @@ function Nav() {
                             {i.status && i.name}
                             <i.iconName
                                 className='nav-icons'
-
                                 size={20} />
                         </p>
                     </button>

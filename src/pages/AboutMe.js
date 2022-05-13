@@ -5,8 +5,8 @@ function AboutMe() {
         <div className='card-container'>
             <Nav />
             <section className='card'>
-                <header id='header'>
-                    <h2>AboutMe</h2>
+                <header >
+                    <h2 className='header'>AboutMe</h2>
                 </header>
                 <article className='AboutMe-content'>
                     <p>

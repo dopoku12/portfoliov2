@@ -6,20 +6,23 @@ function Resume() {
         <div className='card-container'>
             <Nav />
             <section className='card'>
-                <header id='header'>
-                    <h2>David Opoku</h2>
+                <header >
+                    <h2 className='header'>My Resume</h2>
                 </header>
 
                 <ul>
                     <li>
-                        Riverdale, MD 20737
+                        David Opoku
+                    </li>
+                    <li>
+                        +1 240-522-6634
                     </li>
                     <li>
                         davidopoku30@gmail.com
                     </li>
 
                     <li>
-                        +1 240-522-6634
+                        Riverdale, MD 20737
                     </li>
                 </ul>
 

@@ -34,9 +34,6 @@ function Home() {
     return (
         <div className="home">
             <Nav />
-
-
-
             <main >
                 <div className="mode-container">
                     {

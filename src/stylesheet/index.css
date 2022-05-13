@@ -30,7 +30,7 @@
 }
 
 .card {
-  box-shadow: 1px 5px 15px 10px rgba(0, 0, 0, 0.044);
+  box-shadow: 1px 5px 15px 1px rgba(9, 9, 9, 0.41);
   z-index: 10em;
   padding-top: 2%;
   border-radius: 2%;
@@ -38,13 +38,10 @@
   width: auto;
   background-color: #13131306;
   margin-bottom: 10%;
+  font-family: Anek Gujarati;
 }
-.card #header {
+.card .header {
   text-align: center;
-  color: white;
-  border: solid 5px white;
-  background-color: #b2ffda;
-  height: 10vh;
 }
 
 .projects-card {
@@ -52,6 +49,7 @@
   margin: 8%;
   width: 30%;
   border-radius: 2%;
+  font-family: Play;
 }
 
 header {
@@ -62,6 +60,7 @@ header {
   margin: 2%;
   color: white;
   border-radius: 2%;
+  font-family: Play;
   background-color: #2f80ed;
 }
 .project-btn .code-link {
@@ -81,7 +80,7 @@ header {
 
 .img-overlay {
   position: absolute;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(8, 8, 8, 0.56);
   color: white;
   opacity: 0;
   top: 0;
@@ -140,6 +139,7 @@ header {
   border-radius: 2.5%;
   box-shadow: 5px 0 10px 0px;
   text-align: center;
+  font-family: Play;
 }
 .modal-backdrop .close {
   margin-left: 88%;
