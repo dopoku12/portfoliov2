@@ -9,7 +9,7 @@ function Projects() {
             link: 'https://dopoku12.github.io/Dice-Game/',
             code: 'https://github.com/dopoku12/Dice-Game',
             projectName: 'Dice',
-            description: 'this is a Dice Game the user has to '
+            description: 'This is a Dice Game the user rolls a Dice to get points, they can choose to hold which will give another user a turn or the user can continue rolling, if the user rolls a 1 the current amount they are holding will be set to 0, first to hit 100 WINS!!.'
         },
 
         {
@@ -18,7 +18,7 @@ function Projects() {
             link: 'https://dopoku12.github.io/take-a-guess/',
             code: 'https://github.com/dopoku12/take-a-guess',
             projectName: 'Take A Guess',
-            description: 'In this Game you will have to guess the right number to score Points if you guess wrong you lose points and a warning will be given.  '
+            description: 'In this Game you will have to guess the right number(between 1-20) to win ,if you guess wrong you lose points and a hint will be given if your score hits zero you lose.  '
         },
 
         {
@@ -32,22 +32,21 @@ function Projects() {
     ].map(i => ({ ...i, iconName: FaCode }, { ...i, status: false })
 
     ))
-    console.log('default:', projectLi);
+
 
 
     function displayModal(id) {
         const change = projectLi.map
             (i =>
-                i.id === id ? { ...i, status: true }
-                    : { ...i, status: false }
+                i.id === id ? { ...i, status: true } : i
             )
-        console.log('display:', projectLi[1].status);
         setProjectLi(change)
     }
 
     function exitModal() {
-        const reTurn = projectLi.map(i => i.status === true ? { ...i, status: false } : null)
-        console.log('exit:', projectLi[1].status);
+        const reTurn = projectLi.map(
+            i => i.status === true ? { ...i, status: false } : i
+        )
         setProjectLi(reTurn)
     }
 

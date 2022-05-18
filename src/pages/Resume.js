@@ -7,7 +7,7 @@ function Resume() {
             <Nav />
             <section className='card'>
                 <header >
-                    <h2 className='header'>My Resume</h2>
+                    <h2 > <span className='header'>My Resume</span></h2>
                 </header>
 
                 <ul>
@@ -22,7 +22,7 @@ function Resume() {
                     </li>
 
                     <li>
-                        Riverdale, MD 20737
+                        Riverdale, MD
                     </li>
                 </ul>
 

@@ -1,28 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Anek+Gujarati:wght@500&family=My+Soul&family=Play&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anek+Gujarati:wght@500&family=Fira+Code:wght@300&family=Play&display=swap");
 $primary: #b2ffda;
 $secondary: #2f80ed;
-$thirdColor: #cb5eee;
+$thirdColor: #ebb34b;
 
 $fontPlay: Anek Gujarati;
+$fira: Fira Code;
 $fontRoboto: Play;
-$fontSoul: My Soul;
 
 .Home {
   background-color: $secondary;
-}
-
-.Resume {
-  background-color: $primary;
-}
-.Linkedin {
-  background-color: #0077b5;
-}
-.Github {
-  background-color: #000000;
-}
-.Email {
-  background-color: #77cdc3;
-}
-.AboutMe {
-  background-color: #0077b5;
 }

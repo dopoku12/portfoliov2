@@ -1,18 +1,29 @@
 import Nav from "../components/Nav"
-
+import { Link } from "react-router-dom"
 function AboutMe() {
     return (
-        <div className='card-container'>
+        <div className='aboutMe-container'>
             <Nav />
-            <section className='card'>
+            <section className='aboutMe-card card'>
                 <header >
-                    <h2 className='header'>AboutMe</h2>
+                    <h2>
+                        <span className='header'>
+                            AboutMe
+                        </span>
+                    </h2>
                 </header>
                 <article className='AboutMe-content'>
                     <p>
-                        Hello My name is David Opoku first of
-                        thank you for taking the time to view my portfolio
-                        I am Web Developer
+                        Hello My name is David Opoku ,
+
+                        <Link to="/Projects">
+                            <span className="aboutMe-projects-link">
+                                I Design and Develop Websites </span>
+                        </Link>
+                        for those who want their vision or story expressed through a digital canvas.
+                        I want to capture your ideas and create something that can perfectly encapsulate you and your brand,
+                        I am motivated by the creative process and the challenges that are presented by innovation.
+                        let's come together & Make Something Great
 
                     </p>
                 </article>
