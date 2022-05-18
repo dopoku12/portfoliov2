@@ -19,6 +19,7 @@ function Nav() {
             id: 2,
             name: 'Email',
             iconName: FaRegEnvelope,
+            pathName: "mailto:davidopoku30@gmail.com"
         },
         {
             id: 3,
@@ -39,6 +40,7 @@ function Nav() {
             pathName: "/AboutMe"
         }
     ])
+
     function onMouseOver(id) {
         const change = faIcons.map(i => i.id === id ? { ...i, status: true } :
             { ...i, status: false }
@@ -51,7 +53,6 @@ function Nav() {
         )
         setFaIcons(change)
     }
-
 
     const outSrc = faIcons.filter(i => (i.id < 3)).map(i => {
         return (
@@ -82,7 +83,6 @@ function Nav() {
                             <p>
                                 {i.status && i.name}
                                 <i.iconName className='nav-icons'
-
                                     size={20} />
                             </p>
                         </button>
@@ -95,7 +95,6 @@ function Nav() {
         <aside>
             <nav>
                 <ul className='nav-ul'>
-
                     {
                         outSrc
                     }

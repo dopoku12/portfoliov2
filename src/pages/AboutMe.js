@@ -23,8 +23,7 @@ function AboutMe() {
                         for those who want their vision or story expressed through a digital canvas.
                         I want to capture your ideas and create something that can perfectly encapsulate you and your brand,
                         I am motivated by the creative process and the challenges that are presented by innovation.
-                        let's come together & Make Something Great
-
+                        let's come together & Make Something Great.
                     </p>
                 </article>
             </section>
