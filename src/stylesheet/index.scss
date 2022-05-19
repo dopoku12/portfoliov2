@@ -94,6 +94,7 @@ button {
     color: white;
   }
 }
+
 footer {
   .projects-link {
     color: themes.$secondary;
@@ -102,6 +103,11 @@ footer {
   h1 {
     font-family: themes.$fontRoboto;
   }
+}
+
+.projects-h1 {
+  font-family: themes.$fontRoboto;
+  font-size: 1.5em;
 }
 
 @media (max-width: 607px) {

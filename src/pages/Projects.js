@@ -28,10 +28,10 @@ function Projects() {
             code: 'https://github.com/dopoku12/country-search',
             projectName: 'Country-Search',
             description: 'A country search App'
-        },
+        }
     ].map(i => ({ ...i, iconName: FaCode }, { ...i, status: false })
 
-    ))
+    ));
 
 
 
@@ -113,8 +113,8 @@ function Projects() {
             <Nav />
             <section className="project-content">
                 <article >
-                    <header>
-                        <h1>
+                    <header >
+                        <h1 className='projects-h1'>
                             Projects
                         </h1>
                     </header>

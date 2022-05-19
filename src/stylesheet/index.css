@@ -234,6 +234,11 @@ footer h1 {
   font-family: Play;
 }
 
+.projects-h1 {
+  font-family: Play;
+  font-size: 1.5em;
+}
+
 @media (max-width: 607px) {
   main {
     margin-left: 20%;
