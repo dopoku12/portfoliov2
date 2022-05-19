@@ -33,8 +33,6 @@ function Projects() {
 
     ));
 
-
-
     function displayModal(id) {
         const change = projectLi.map
             (i =>

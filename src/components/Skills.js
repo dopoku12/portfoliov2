@@ -1,4 +1,4 @@
-import { SiBootstrap, SiReact, SiJavascript, SiSass, SiGithub, SiTailwindcss, SiLeaflet, SiNodedotjs, } from 'react-icons/si'
+import { SiBootstrap, SiReact, SiSass, SiGithub, SiTailwindcss, SiNodedotjs, } from 'react-icons/si'
 
 function Skills() {
     const iconskills =
