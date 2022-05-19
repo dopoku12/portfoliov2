@@ -9,7 +9,7 @@ function Projects() {
             link: 'https://dopoku12.github.io/Dice-Game/',
             code: 'https://github.com/dopoku12/Dice-Game',
             projectName: 'Dice',
-            description: 'This is a Dice Game the user rolls a Dice to get points, they can choose to hold which will give another user a turn or the user can continue rolling, if the user rolls a 1 the current amount they are holding will be set to 0, first to hit 100 WINS!!.'
+            description: `Welcome to Dice, The goal of this Dice Game is to be the first player to hit 100!! In this game user roll's a Dice to accrue points. If the die lands on 1, the points they accumulated are set to 0. The user is able to hold if they feel their luck may be running out. At this point, player 2 takes a turn .`
         },
 
         {
