@@ -20,7 +20,7 @@ function Home() {
                     A Front-End web Developer/Designer currently based in the Washington DC-Baltimore Area let's come together &
                     <span className="text-link">  Make Something Great</span>
                 </p>
-                <footer>
+                <footer className="projects-link-container">
                     <Link to="/Projects">
                         <FaRocket className="projects-link" size={35} />
                         <h1 className="projects-link">View Projects</h1>

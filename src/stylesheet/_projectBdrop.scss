@@ -11,7 +11,6 @@
   z-index: 100%;
   width: 100vw;
   height: 350vh;
-  margin-top: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,7 +18,7 @@
   .modalBox {
     background-color: themes.$primary;
     width: 50%;
-    margin-bottom: 100%;
+    margin-bottom: 90%;
     border-radius: 2.5%;
     box-shadow: 5px 0 10px 0px;
     text-align: center;

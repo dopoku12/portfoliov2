@@ -96,10 +96,10 @@ function Nav() {
             <nav>
                 <ul className='nav-ul'>
                     {
-                        outSrc
+                        linkSrc
                     }
                     {
-                        linkSrc
+                        outSrc
                     }
                 </ul>
             </nav>

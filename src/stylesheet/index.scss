@@ -1,7 +1,7 @@
 @use "themes";
 @use "cards";
 @use "card-content";
-@use "landingpg";
+
 @use "projectBdrop";
 body {
   background-image: linear-gradient(themes.$secondary, themes.$primary);
@@ -42,6 +42,10 @@ ul {
   display: flex;
   flex-direction: column;
   position: fixed;
+  .Home {
+    background-color: themes.$thirdColor;
+  }
+
   .Resume {
     background-color: themes.$thirdColor;
   }
@@ -55,7 +59,7 @@ ul {
     background-color: themes.$thirdColor;
   }
   .AboutMe {
-    background-color: #0077b5;
+    background-color: themes.$thirdColor;
   }
 }
 
@@ -109,7 +113,9 @@ footer {
   font-family: themes.$fontRoboto;
   font-size: 1.5em;
 }
-
+.projects-link-container {
+  border: solid #0077b5;
+}
 @media (max-width: 607px) {
   main {
     margin-left: 20%;
