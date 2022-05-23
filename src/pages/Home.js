@@ -7,14 +7,14 @@ function Home() {
             <Nav />
             <main >
                 <header className="intro">
-                    <h2 className='intro-h2 animate__animated animate__zoomInDown'>
+                    <h1 className='intro-h2 animate__animated animate__zoomInDown'>
                         Welcome, I am
-                    </h2>
-                    <h1 className="name">
+                    </h1>
+                    <h2 className="name">
                         <span className='first'>David </span>
 
                         <span className='last'>Opoku</span>
-                    </h1>
+                    </h2>
                 </header>
                 <p className="intro-pg">
                     A Front-End web Developer/Designer currently based in the Washington DC-Baltimore Area let's come together &
