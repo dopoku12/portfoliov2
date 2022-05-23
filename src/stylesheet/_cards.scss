@@ -34,13 +34,15 @@
 }
 
 .project-content {
-  display: grid;
-  grid-row: 10px;
+  ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
   .projects-card {
-    box-shadow: 1px 5px 15px 1px rgba(9, 9, 9, 0.41);
+    box-shadow: 1px 25px 25px 0px rgba(9, 9, 9, 0.41);
     margin-top: 20%;
     margin-left: 15%;
-    width: 30%;
+    width: 60%;
     border-radius: 2%;
     font-family: themes.$fontRoboto;
   }

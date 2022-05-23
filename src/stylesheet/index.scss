@@ -43,11 +43,11 @@ ul {
   flex-direction: column;
   position: fixed;
   .Home {
-    background-color: themes.$thirdColor;
+    background-color: rgb(13, 213, 210);
   }
 
   .Resume {
-    background-color: themes.$thirdColor;
+    background-color: rgb(13, 213, 210);
   }
   .Linkedin {
     background-color: #0077b5;
@@ -56,10 +56,10 @@ ul {
     background-color: #000000;
   }
   .Email {
-    background-color: themes.$thirdColor;
+    background-color: gray;
   }
   .AboutMe {
-    background-color: themes.$thirdColor;
+    background-color: rgb(13, 213, 210);
   }
 }
 
@@ -108,13 +108,15 @@ footer {
     font-family: themes.$fontRoboto;
   }
 }
-
-.projects-h1 {
-  font-family: themes.$fontRoboto;
-  font-size: 1.5em;
-}
 .projects-link-container {
-  border: solid #0077b5;
+  border: solid #0077b5 2px;
+  &:hover {
+    box-shadow: 1px 25px 25px 10px rgba(0, 0, 0, 0.33);
+  }
+  .projects-h1 {
+    font-family: themes.$fontRoboto;
+    font-size: 1.5em;
+  }
 }
 @media (max-width: 607px) {
   main {

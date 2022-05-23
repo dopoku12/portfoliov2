@@ -31,15 +31,15 @@
   text-align: center;
 }
 
-.project-content {
+.project-content ul {
   display: grid;
-  grid-row: 10px;
+  grid-template-columns: repeat(2, 1fr);
 }
 .project-content .projects-card {
-  box-shadow: 1px 5px 15px 1px rgba(9, 9, 9, 0.41);
+  box-shadow: 1px 25px 25px 0px rgba(9, 9, 9, 0.41);
   margin-top: 20%;
   margin-left: 15%;
-  width: 30%;
+  width: 60%;
   border-radius: 2%;
   font-family: Play;
 }
@@ -127,7 +127,7 @@ header {
 .modal-backdrop .modalBox {
   background-color: #b2ffda;
   width: 50%;
-  margin-bottom: 90%;
+  margin-bottom: 25%;
   border-radius: 2.5%;
   box-shadow: 5px 0 10px 0px;
   text-align: center;
@@ -178,10 +178,10 @@ ul .nav-icons {
   position: fixed;
 }
 .nav-ul .Home {
-  background-color: #ebb34b;
+  background-color: #0dd5d2;
 }
 .nav-ul .Resume {
-  background-color: #ebb34b;
+  background-color: #0dd5d2;
 }
 .nav-ul .Linkedin {
   background-color: #0077b5;
@@ -190,10 +190,10 @@ ul .nav-icons {
   background-color: #000000;
 }
 .nav-ul .Email {
-  background-color: #ebb34b;
+  background-color: gray;
 }
 .nav-ul .AboutMe {
-  background-color: #ebb34b;
+  background-color: #0dd5d2;
 }
 
 .name {
@@ -238,13 +238,15 @@ footer h1 {
   font-family: Play;
 }
 
-.projects-h1 {
+.projects-link-container {
+  border: solid #0077b5 2px;
+}
+.projects-link-container:hover {
+  box-shadow: 1px 25px 25px 10px rgba(0, 0, 0, 0.33);
+}
+.projects-link-container .projects-h1 {
   font-family: Play;
   font-size: 1.5em;
-}
-
-.projects-link-container {
-  border: solid #0077b5;
 }
 
 @media (max-width: 607px) {
