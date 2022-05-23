@@ -177,10 +177,10 @@ ul .nav-icons {
   position: fixed;
 }
 .nav-ul .Home {
-  background-color: #0dd5d2;
+  background-color: rgba(5, 117, 115, 0.652);
 }
 .nav-ul .Resume {
-  background-color: #0dd5d2;
+  background-color: rgba(5, 117, 115, 0.652);
 }
 .nav-ul .Linkedin {
   background-color: #0077b5;
@@ -192,11 +192,16 @@ ul .nav-icons {
   background-color: gray;
 }
 .nav-ul .AboutMe {
-  background-color: #0dd5d2;
+  background-color: rgba(5, 117, 115, 0.652);
+}
+
+.intro-h2 {
+  font-size: 3rem;
+  font-family: Play;
 }
 
 .name {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 .name .first {
   font-family: Play;
@@ -204,11 +209,6 @@ ul .nav-icons {
 .name .last {
   box-shadow: 0px 1px black;
   color: #b2ffda;
-  font-family: Play;
-}
-
-.intro-h2 {
-  font-size: 3rem;
   font-family: Play;
 }
 

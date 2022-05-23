@@ -65,7 +65,7 @@ function Nav() {
                             {i.status && i.name}
                             <i.iconName
                                 className='nav-icons'
-                                size={20} />
+                                size={27} />
                         </p>
                     </button>
                 </li>
@@ -83,7 +83,7 @@ function Nav() {
                             <p>
                                 {i.status && i.name}
                                 <i.iconName className='nav-icons'
-                                    size={20} />
+                                    size={27} />
                             </p>
                         </button>
                     </li>

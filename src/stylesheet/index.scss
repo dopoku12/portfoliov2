@@ -42,11 +42,11 @@ ul {
   flex-direction: column;
   position: fixed;
   .Home {
-    background-color: rgb(13, 213, 210);
+    background-color: themes.$thirdColor;
   }
 
   .Resume {
-    background-color: rgb(13, 213, 210);
+    background-color: themes.$thirdColor;
   }
   .Linkedin {
     background-color: #0077b5;
@@ -58,12 +58,17 @@ ul {
     background-color: gray;
   }
   .AboutMe {
-    background-color: rgb(13, 213, 210);
+    background-color: themes.$thirdColor;
   }
 }
 
+.intro-h2 {
+  font-size: 3rem;
+  font-family: themes.$fontRoboto;
+}
+
 .name {
-  font-size: 2rem;
+  font-size: 2.5rem;
 
   .first {
     font-family: themes.$fontRoboto;
@@ -73,11 +78,6 @@ ul {
     color: themes.$primary;
     font-family: themes.$fontRoboto;
   }
-}
-
-.intro-h2 {
-  font-size: 3rem;
-  font-family: themes.$fontRoboto;
 }
 
 .intro-pg {
