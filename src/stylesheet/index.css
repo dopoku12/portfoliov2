@@ -240,7 +240,7 @@ footer h1 {
 }
 
 .projects-link-container {
-  border: dashed #0077b5;
+  border: dashed #0077b5 1.5px;
 }
 .projects-link-container:hover {
   box-shadow: 1px 25px 25px 10px rgba(0, 0, 0, 0.33);

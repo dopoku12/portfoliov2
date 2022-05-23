@@ -12,21 +12,24 @@ function Home() {
                     </h1>
                     <h2 className="name">
                         <span className='first'>David </span>
-
                         <span className='last'>Opoku</span>
                     </h2>
                 </header>
+
                 <p className="intro-pg">
                     A Front-End web Developer/Designer currently based in the Washington DC-Baltimore Area let's come together &
-                    <span className="text-link">  Make Something Great</span>
+                    <span className="text-link" datatype="">  Make Something Great</span>
                 </p>
-                <footer className="projects-link-container">
-                    <Link to="/Projects">
+
+                <Link to="/Projects">
+                    <footer className="projects-link-container">
                         <FaRocket className="projects-link" size={35} />
                         <h1 className="projects-link">View Projects</h1>
-                    </Link>
-                </footer>
+                    </footer>
+                </Link>
             </main>
+
+            <span className="copyright">&#169</span>
         </div>
 
     )
