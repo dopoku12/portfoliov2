@@ -1,9 +1,9 @@
-import Nav from "../components/Nav"
+
 import { Link } from "react-router-dom"
 function AboutMe() {
     return (
         <div className='aboutMe-container'>
-            <Nav />
+
             <section className='aboutMe-card card'>
                 <header >
                     <h2>

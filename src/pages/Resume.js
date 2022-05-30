@@ -1,10 +1,10 @@
 import Education from '../components/Education';
 import Skills from '../components/Skills'
-import Nav from "../components/Nav"
+
 function Resume() {
     return (
         <div className='card-container'>
-            <Nav />
+
             <section className='card'>
                 <header >
                     <h2 > <span className='header'>My Resume</span></h2>
