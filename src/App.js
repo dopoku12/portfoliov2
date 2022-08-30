@@ -63,7 +63,7 @@ function App() {
 
   const outSrc = faIcons.filter(i => (i.id < 3)).map(i => {
     return (
-      <a key={i.id} href={i.pathName}>
+      <a key={i.id} href={i.pathName} target='_blank'>
         <li className="nav-li">
           <button className={i.name} onMouseOver={() => onMouseOver(i.id)}
 
