@@ -1,10 +1,10 @@
-import Nav from "../components/Nav"
+
 import { FaRocket } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 function Home() {
     return (
         <div className="home">
-            <Nav />
+
             <main >
                 <header className="intro">
                     <h1 className='intro-h2 animate__animated animate__zoomInDown'>
@@ -29,7 +29,7 @@ function Home() {
                 </Link>
             </main>
 
-            <span className="copyright">&#169</span>
+            <span className="copyright"></span>
         </div>
 
     )

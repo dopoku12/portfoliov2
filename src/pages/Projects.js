@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { FaCode } from 'react-icons/fa'
-import Nav from "../components/Nav"
+
 function Projects() {
     const [projectLi, setProjectLi] = useState([
         {
@@ -108,7 +108,6 @@ function Projects() {
     return (
         <div className='project-body'>
 
-            <Nav />
             <section className="project-content">
                 <article >
                     <header >
