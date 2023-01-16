@@ -28,6 +28,14 @@ function Projects() {
             code: 'https://github.com/dopoku12/country-search',
             projectName: 'Country-Search',
             description: 'A country search App'
+        },
+        {
+            id: 3,
+            imgName: '/projects/weather-wiz.png',
+            link: 'https://weather-wiz.netlify.app/',
+            code: 'https://github.com/dopoku12/weather',
+            projectName: 'weather-wiz',
+            description: 'Check the weather in your city as well as other cities'
         }
     ].map(i => ({ ...i, iconName: FaCode }, { ...i, status: false })
 
