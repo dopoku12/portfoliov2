@@ -3,8 +3,23 @@ import { FaCode } from 'react-icons/fa'
 
 function Projects() {
     const [projectLi, setProjectLi] = useState([
+
         {
             id: 0,
+            imgName: '/projects/country-wiz.png',
+            link: 'https://country-wiz.netlify.app/',
+            code: 'https://github.com/dopoku12/countryWiz',
+            projectName: 'country-wiz',
+            description: `This project displays country data from an api.
+             when you first open the site the users lat&long is collected using the built in javascript geolocation api,
+             then using closures the user location is pulled by using the tom toms reverse gelocation api,
+             then with react custom hooks the name of the country is then passed into another function which displays information about the users country
+             this all happens upon first render using the react useEffect hook.
+             In case the user dose not provide a lat&long they can always enter the name of a country in the search bar, 
+             the value is then debounced to avoid constant rerendering after every key down then the value is filtered to 10 options the user can pick from `
+        },
+        {
+            id: 1,
             imgName: '/projects/pig-game.png',
             link: 'https://dopoku12.github.io/Dice-Game/',
             code: 'https://github.com/dopoku12/Dice-Game',
@@ -13,7 +28,7 @@ function Projects() {
         },
 
         {
-            id: 1,
+            id: 2,
             imgName: '/projects/guess-game.png',
             link: 'https://dopoku12.github.io/take-a-guess/',
             code: 'https://github.com/dopoku12/take-a-guess',
@@ -22,12 +37,20 @@ function Projects() {
         },
 
         {
-            id: 2,
+            id: 3,
             imgName: '/projects/country-search.png',
             link: ' https://dopoku12.github.io/country-search/',
             code: 'https://github.com/dopoku12/country-search',
             projectName: 'Country-Search',
             description: 'A country search App'
+        },
+        {
+            id: 5,
+            imgName: '/projects/weather-wiz.png',
+            link: 'https://weather-wiz.netlify.app/',
+            code: 'https://github.com/dopoku12/weather',
+            projectName: 'weather-wiz',
+            description: 'Check the weather in your city as well as other cities'
         }
     ].map(i => ({ ...i, iconName: FaCode }, { ...i, status: false })
 
