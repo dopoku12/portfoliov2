@@ -8,7 +8,7 @@ function Projects() {
             id: 0,
             imgName: '/projects/country-wiz.png',
             link: 'https://country-wiz.netlify.app/',
-            code: 'https://github.com/dopoku12/country-wiz',
+            code: 'https://github.com/dopoku12/countryWiz',
             projectName: 'country-wiz',
             description: `This project displays country data from an api.
              when you first open the site the users lat&long is collected using the built in javascript geolocation api,
