@@ -1,8 +1,6 @@
 import Home from "./pages/Home"
-import Projects from "./pages/Projects";
-import Resume from "./pages/Resume";
-import AboutMe from "./pages/AboutMe";
-import { BrowserRouter, Route, Routes, Link, Outlet } from "react-router-dom";
+import Nav from "./components/Nav";
+import { Outlet } from "react-router-dom";
 import { useState } from 'react';
 import { FaMoon, FaSun, FaGithub, FaRegEnvelope, FaLinkedin } from 'react-icons/fa';
 
@@ -46,6 +44,7 @@ function App() {
   return (
     <div className="App">
       <Home />
+      <Nav />
       <Outlet />
       {
         // <BrowserRouter>
@@ -61,12 +60,11 @@ function App() {
         //     <Route path="/Projects" element={<Projects />} />
         //   </Routes>
 
-
         //   <Routes>
         //     <Route path="/AboutMe" element={<AboutMe />} />
         //   </Routes>
-
         // </BrowserRouter>
+
       }
     </div>
   );

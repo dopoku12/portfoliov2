@@ -1,8 +1,11 @@
 @use "themes";
 @use "cards";
 @use "card-content";
-
 @use "projectBdrop";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   background-image: linear-gradient(themes.$secondary, themes.$primary);
   height: auto;

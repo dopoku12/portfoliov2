@@ -21,12 +21,7 @@ function Home() {
                     <span className="text-link" datatype="">  Make Something Great</span>
                 </p>
 
-                <Link to="/Projects">
-                    <footer className="projects-link-container">
-                        <FaRocket className="projects-link" size={35} />
-                        <h1 className="projects-link">View Projects</h1>
-                    </footer>
-                </Link>
+
             </main>
 
             <span className="copyright"></span>
