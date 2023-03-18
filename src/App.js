@@ -2,13 +2,13 @@ import Home from "./pages/Home"
 import Projects from "./pages/Projects";
 import Resume from "./pages/Resume";
 import AboutMe from "./pages/AboutMe";
-import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
+import { BrowserRouter, Route, Routes, Link, Outlet } from "react-router-dom";
 import { useState } from 'react';
-import { FaInfo, FaGithub, FaRegEnvelope, FaLinkedin, FaRegIdBadge, FaHome } from 'react-icons/fa';
+import { FaMoon, FaSun, FaGithub, FaRegEnvelope, FaLinkedin } from 'react-icons/fa';
 
 function App() {
 
-  const [faIcons, setFaIcons] = useState([
+  const faIcons = [
     {
       id: 0,
       name: 'Linkedin',
@@ -27,116 +27,47 @@ function App() {
       iconName: FaRegEnvelope,
       pathName: "mailto:davidopoku30@gmail.com"
     },
-    {
-      id: 3,
-      name: 'Home',
-      iconName: FaHome,
-      pathName: "/"
-    },
+
+
     {
       id: 4,
-      name: 'Resume',
-      iconName: FaRegIdBadge,
-      pathName: "/Resume"
-    },
+      name: 'lightMode',
+      iconName: FaSun,
+
+    }
+    ,
     {
       id: 5,
-      name: 'AboutMe',
-      iconName: FaInfo,
-      pathName: "/AboutMe"
-    }
-  ])
-
-  function onMouseOver(id) {
-    const change = faIcons.map(i => i.id === id ? { ...i, status: true } :
-      { ...i, status: false }
-    )
-    setFaIcons(change)
-  }
-  function onMouseOut(id) {
-    const change = faIcons.map(i => i.id === id ? { ...i, status: false } :
-      { ...i, status: null }
-    )
-    setFaIcons(change)
-  }
-
-
-  const outSrc = faIcons.filter(i => (i.id < 3)).map(i => {
-    return (
-      <a key={i.id} href={i.pathName} target='_blank'>
-        <li className="nav-li">
-          <button className={i.name} onMouseOver={() => onMouseOver(i.id)}
-
-            onMouseOut={() => onMouseOut(i.id)}>
-            <p>
-              {i.status && i.name}
-              <i.iconName
-                className='nav-icons'
-                size={27} />
-            </p>
-          </button>
-        </li>
-      </a>
-    )
-  })
-
-  const linkSrc = faIcons.filter(i => (i.id > 2))
-    .map(i => {
-      return (
-        <Link to={i.pathName} key={i.id}>
-          <li className="nav-li" >
-            <button className={i.name} onMouseOver={() => onMouseOver(i.id)}
-              onMouseOut={() => onMouseOut(i.id)}>
-              <p>
-                {i.status && i.name}
-                <i.iconName className='nav-icons'
-                  size={27} />
-              </p>
-            </button>
-          </li>
-        </Link>
-      )
-    })
-
+      name: 'darkMode',
+      iconName: FaMoon,
+    },
+  ]
 
   return (
     <div className="App">
+      <Home />
+      <Outlet />
+      {
+        // <BrowserRouter>
+        //   <Routes>
+        //     <Route path="/" element={<Home />} />
+        //   </Routes>
 
-      <BrowserRouter>
+        //   <Routes>
+        //     <Route path="/Resume" element={<Resume />} />
+        //   </Routes>
 
-        <aside>
-          <nav>
-            <ul className='nav-ul'>
-              {
-                linkSrc
-              }
-              {
-                outSrc
-              }
-            </ul>
-          </nav>
-        </aside>
-
-
-        <Routes>
-          <Route path="/" element={<Home />} />
-        </Routes>
-
-        <Routes>
-          <Route path="/Resume" element={<Resume />} />
-        </Routes>
-
-        <Routes>
-          <Route path="/Projects" element={<Projects />} />
-        </Routes>
+        //   <Routes>
+        //     <Route path="/Projects" element={<Projects />} />
+        //   </Routes>
 
 
-        <Routes>
-          <Route path="/AboutMe" element={<AboutMe />} />
-        </Routes>
+        //   <Routes>
+        //     <Route path="/AboutMe" element={<AboutMe />} />
+        //   </Routes>
 
-      </BrowserRouter>
-
+        // </BrowserRouter>
+      }
     </div>
   );
 }

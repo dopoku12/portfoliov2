@@ -52,7 +52,7 @@ function Projects() {
             projectName: 'weather-wiz',
             description: 'Check the weather in your city as well as other cities'
         }
-    ].map(i => ({ ...i, iconName: FaCode }, { ...i, status: false })
+    ].map(i => ({ ...i, iconName: FaCode },{ ...i, status: false })
 
     ));
 
