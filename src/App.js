@@ -1,8 +1,8 @@
-import Home from "./pages/Home"
+import Home from "./components/Home"
 import Nav from "./components/Nav";
 import { Outlet } from "react-router-dom";
 import { useState } from 'react';
-import { FaMoon, FaSun, FaGithub, FaRegEnvelope, FaLinkedin } from 'react-icons/fa';
+import { FaMoon, FaSun, FaGithub, FaRegEnvelope, FaLinkedin, FaAngleDown } from 'react-icons/fa';
 
 function App() {
 
@@ -11,61 +11,49 @@ function App() {
       id: 0,
       name: 'Linkedin',
       iconName: FaLinkedin,
-      pathName: "https://www.linkedin.com/in/david-opoku-7008721b7/"
+      pathName: "https://www.linkedin.com/in/david-opoku-7008721b7/",
+      color: ' #0077b5'
     },
     {
       id: 1,
       name: 'Github',
       iconName: FaGithub,
-      pathName: "https://github.com/dopoku12"
+      pathName: "https://github.com/dopoku12",
+      color: '#000000'
     },
+
     {
       id: 2,
       name: 'Email',
       iconName: FaRegEnvelope,
-      pathName: "mailto:davidopoku30@gmail.com"
+      pathName: "mailto:davidopoku30@gmail.com",
+      color: 'gray'
     },
 
 
     {
       id: 4,
-      name: 'lightMode',
+      name: 'Light Mode',
       iconName: FaSun,
 
     }
     ,
     {
       id: 5,
-      name: 'darkMode',
+      name: 'Dark Mode',
       iconName: FaMoon,
+
     },
+
   ]
+
 
   return (
     <div className="App">
       <Home />
-      <Nav />
+      <Nav faIcons={faIcons} FaAngleDown={FaAngleDown} />
       <Outlet />
-      {
-        // <BrowserRouter>
-        //   <Routes>
-        //     <Route path="/" element={<Home />} />
-        //   </Routes>
 
-        //   <Routes>
-        //     <Route path="/Resume" element={<Resume />} />
-        //   </Routes>
-
-        //   <Routes>
-        //     <Route path="/Projects" element={<Projects />} />
-        //   </Routes>
-
-        //   <Routes>
-        //     <Route path="/AboutMe" element={<AboutMe />} />
-        //   </Routes>
-        // </BrowserRouter>
-
-      }
     </div>
   );
 }

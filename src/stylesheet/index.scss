@@ -6,8 +6,12 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
 body {
-  background-image: linear-gradient(themes.$secondary, themes.$primary);
   height: auto;
   margin: 0;
   display: flex;
@@ -15,13 +19,13 @@ body {
   align-items: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  font-family: themes.$fontPlay;
 }
 
 main {
-  margin-left: 20%;
-  width: 60%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   text-align: center;
 }
 
@@ -29,58 +33,15 @@ a {
   text-decoration: none;
 }
 
-ul {
-  list-style: none;
-  .nav-icons {
-    cursor: pointer;
-  }
-}
-
-.nav-ul {
-  top: 0%;
-  margin: 0%;
-  padding: 0%;
-  left: 0%;
-  display: flex;
-  flex-direction: column;
-  position: fixed;
-
-  .Home {
-    background-color: themes.$thirdColor;
-  }
-
-  .Resume {
-    background-color: themes.$thirdColor;
-  }
-  .Linkedin {
-    background-color: #0077b5;
-  }
-  .Github {
-    background-color: #000000;
-  }
-  .Email {
-    background-color: gray;
-  }
-  .AboutMe {
-    background-color: themes.$thirdColor;
-  }
-}
-
 .intro-h2 {
   font-size: 3rem;
-  font-family: themes.$fontRoboto;
 }
 
 .name {
   font-size: 2.5rem;
 
-  .first {
-    font-family: themes.$fontRoboto;
-  }
   .last {
     box-shadow: 0px 1px black;
-    color: themes.$primary;
-    font-family: themes.$fontRoboto;
   }
 }
 
@@ -88,11 +49,6 @@ ul {
   padding: 0%;
   margin-bottom: 20%;
   font-size: 1.5rem;
-  font-family: themes.$fontPlay;
-}
-
-.text-link {
-  color: themes.$secondary;
 }
 
 button {
@@ -103,16 +59,6 @@ button {
   }
 }
 
-footer {
-  .projects-link {
-    margin-top: 3%;
-    color: themes.$secondary;
-  }
-
-  h1 {
-    font-family: themes.$fontRoboto;
-  }
-}
 .projects-link-container {
   border: dashed #0077b5 1.5px;
   &:hover {
@@ -121,24 +67,12 @@ footer {
 }
 .projects-h1 {
   margin-top: 5%;
-  font-family: themes.$fontRoboto;
   font-size: 1.5em;
 }
-@media (max-width: 607px) {
-  main {
-    margin-left: 20%;
-  }
-}
 
-@media (max-width: 303px) {
-  main {
-    margin-left: 27%;
-    width: 75%;
-  }
-  .intro-h1 {
-    font-size: 2rem;
-  }
-  .intro-pg {
-    font-size: 1.2rem;
-  }
+.intro-h1 {
+  font-size: 2rem;
+}
+.intro-pg {
+  font-size: 1.2rem;
 }
