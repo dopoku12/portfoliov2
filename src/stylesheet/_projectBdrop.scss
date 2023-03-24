@@ -1,7 +1,7 @@
+@use "utils";
+
 .project-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include utils.flex-box(column, center);
 }
 
 .modal-backdrop {

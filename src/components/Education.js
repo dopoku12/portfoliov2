@@ -3,23 +3,15 @@ function Education() {
         <article className='Education'>
 
             <h1 className="edu-type"> Coding BootCamps</h1>
-            <p>Vanderbilt University Coding BootCamp - Nashville, TN
-                September 2021 to March 2022</p>
+            <p>Vanderbilt University Coding BootCamp - Nashville, TN</p>
 
-            <p>
-                Generation USA Jr.WebDeveloper Coding BootCamp - Washington, D.C
-                2022
-            </p>
-            <h1 className="edu-type">2 years of Computer Science</h1>
-            <p>Wilmington University - New Castle, DE
+            <p>Generation USA Jr.WebDeveloper Coding BootCamp - Washington, D.C</p>
 
-                2019 to 2021
+            <h1 className="edu-type">Computer Science</h1>
+            <p>Wilmington University - New Castle, DE</p>
 
-            </p>
             <h1 className="edu-type">High School Diploma</h1>
-            <p>Parkdale HighSchool - Riverdale, MD
-                2015 to 2019
-            </p>
+            <p>Parkdale HighSchool - Riverdale, MD</p>
 
         </article>
     )

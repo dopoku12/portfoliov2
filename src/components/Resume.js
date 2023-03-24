@@ -1,5 +1,5 @@
-import Education from '../components/Education';
-import Skills from '../components/Skills'
+import Education from './Education';
+import Skills from './Skills'
 
 function Resume() {
     return (

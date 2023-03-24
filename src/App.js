@@ -2,20 +2,23 @@ import Home from "./components/Home"
 import Nav from "./components/Nav";
 import { Outlet } from "react-router-dom";
 import { useState } from 'react';
-import { FaMoon, FaSun, FaGithub, FaRegEnvelope, FaLinkedin, FaAngleDown } from 'react-icons/fa';
+import {
+  FaMoon, FaSun, FaGithub,
+  FaRegEnvelope, FaLinkedin,
+  FaAngleDown, FaAngleUp
+} from 'react-icons/fa';
 
 function App() {
 
+  let num = 0;
   const faIcons = [
     {
-      id: 0,
       name: 'Linkedin',
       iconName: FaLinkedin,
       pathName: "https://www.linkedin.com/in/david-opoku-7008721b7/",
       color: ' #0077b5'
     },
     {
-      id: 1,
       name: 'Github',
       iconName: FaGithub,
       pathName: "https://github.com/dopoku12",
@@ -23,7 +26,6 @@ function App() {
     },
 
     {
-      id: 2,
       name: 'Email',
       iconName: FaRegEnvelope,
       pathName: "mailto:davidopoku30@gmail.com",
@@ -32,27 +34,29 @@ function App() {
 
 
     {
-      id: 4,
       name: 'Light Mode',
       iconName: FaSun,
 
     }
     ,
     {
-      id: 5,
       name: 'Dark Mode',
       iconName: FaMoon,
-
     },
 
-  ]
+  ].map(i => { return { ...i, id: num++ } })
 
 
   return (
-    <div className="App">
+    <div className=" dark:bg-slate-800  h-full">
       <Home />
-      <Nav faIcons={faIcons} FaAngleDown={FaAngleDown} />
-      <Outlet />
+      <Nav faIcons={faIcons} FaAngleDown={FaAngleDown}
+        FaAngleUp={FaAngleUp}
+      />
+
+      <main className="dark:bg-slate-800 ">
+        <Outlet />
+      </main>
 
     </div>
   );

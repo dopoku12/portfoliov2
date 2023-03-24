@@ -11,8 +11,6 @@
 
   width: 50%;
   text-align: center;
-  .aboutMe-projects-link {
-  }
 }
 
 .card {
@@ -29,16 +27,10 @@
   }
 }
 
-.project-content {
-  ul {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .projects-card {
-    box-shadow: 1px 25px 25px 0px rgba(9, 9, 9, 0.41);
-    margin-top: 20%;
-    margin-left: 15%;
-    width: 60%;
-    border-radius: 2%;
-  }
+.projects-card {
+  box-shadow: 1px 25px 25px 0px rgba(9, 9, 9, 0.41);
+  margin-top: 20%;
+  margin-left: 15%;
+  width: 60%;
+  border-radius: 2%;
 }

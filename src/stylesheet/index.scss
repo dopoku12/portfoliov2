@@ -1,4 +1,4 @@
-@use "themes";
+@use "utils";
 @use "cards";
 @use "card-content";
 @use "projectBdrop";
@@ -12,20 +12,25 @@
 }
 
 body {
-  height: auto;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  font-family: themes.$fontPlay;
+  font-family: utils.$fontPlay;
+}
+
+.home {
+  background-color: antiquewhite;
+  border-bottom-left-radius: 20%;
+  border-bottom-right-radius: 20%;
+}
+
+footer {
+  @include utils.flex-box(column, center);
+}
+
+ul {
+  @include utils.flex-box(row, space-between);
 }
 
 main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  @include utils.flex-box(column, center);
   text-align: center;
 }
 
@@ -33,34 +38,7 @@ a {
   text-decoration: none;
 }
 
-.intro-h2 {
-  font-size: 3rem;
-}
-
-.name {
-  font-size: 2.5rem;
-
-  .last {
-    box-shadow: 0px 1px black;
-  }
-}
-
-.intro-pg {
-  padding: 0%;
-  margin-bottom: 20%;
-  font-size: 1.5rem;
-}
-
-button {
-  border: thin;
-  cursor: pointer;
-  p {
-    color: white;
-  }
-}
-
 .projects-link-container {
-  border: dashed #0077b5 1.5px;
   &:hover {
     box-shadow: 1px 25px 25px 10px rgba(0, 0, 0, 0.33);
   }

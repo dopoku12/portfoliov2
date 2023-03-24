@@ -12,6 +12,7 @@
   width: 50%;
   text-align: center;
 }
+
 .card {
   box-shadow: 1px 5px 15px 1px rgba(9, 9, 9, 0.41);
   z-index: 10em;
@@ -26,11 +27,7 @@
   text-align: center;
 }
 
-.project-content ul {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
-.project-content .projects-card {
+.projects-card {
   box-shadow: 1px 25px 25px 0px rgba(9, 9, 9, 0.41);
   margin-top: 20%;
   margin-left: 15%;
@@ -88,7 +85,8 @@ header {
 .resume-content {
   display: flex;
   flex-direction: column;
-  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 .resume-content .sub-header {
   border-top: 0.1rem solid;
@@ -96,13 +94,17 @@ header {
 
 .resume-icon-ul {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   padding-right: 20%;
 }
 
 .project-body {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .modal-backdrop {
@@ -136,19 +138,33 @@ header {
 }
 
 body {
-  height: auto;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   font-family: Anek Gujarati;
+}
+
+.home {
+  background-color: antiquewhite;
+  border-bottom-left-radius: 20%;
+  border-bottom-right-radius: 20%;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
 main {
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
   text-align: center;
 }
@@ -157,34 +173,6 @@ a {
   text-decoration: none;
 }
 
-.intro-h2 {
-  font-size: 3rem;
-}
-
-.name {
-  font-size: 2.5rem;
-}
-.name .last {
-  box-shadow: 0px 1px black;
-}
-
-.intro-pg {
-  padding: 0%;
-  margin-bottom: 20%;
-  font-size: 1.5rem;
-}
-
-button {
-  border: thin;
-  cursor: pointer;
-}
-button p {
-  color: white;
-}
-
-.projects-link-container {
-  border: dashed #0077b5 1.5px;
-}
 .projects-link-container:hover {
   box-shadow: 1px 25px 25px 10px rgba(0, 0, 0, 0.33);
 }
