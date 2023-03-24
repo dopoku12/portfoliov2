@@ -5,7 +5,8 @@ import { useState } from 'react';
 import {
   FaMoon, FaSun, FaGithub,
   FaRegEnvelope, FaLinkedin,
-  FaAngleDown, FaAngleUp
+  FaAngleDown, FaAngleUp,
+  FaCode
 } from 'react-icons/fa';
 
 function App() {
@@ -49,12 +50,12 @@ function App() {
 
   return (
     <div className=" dark:bg-slate-800  h-full">
-      <Home />
+      <Home FaCode={FaCode} />
       <Nav faIcons={faIcons} FaAngleDown={FaAngleDown}
         FaAngleUp={FaAngleUp}
       />
+      <main >
 
-      <main className="dark:bg-slate-800 ">
         <Outlet />
       </main>
 

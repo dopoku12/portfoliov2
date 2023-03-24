@@ -1,29 +1,18 @@
-function Home() {
+function Home({ FaCode }) {
     return (
-        <div className="home">
+        <div className="home flex flex-col items-center ">
 
-            <header className="">
-                <h1 className=''>
-                    Welcome, I am
+            <header >
+                <h1 className='text-xl m-5 flex'>
+                    <FaCode color='orange' size={20} />  David  <span>Opoku</span>
                 </h1>
-                <h2 className="name">
-                    <span className='first'>David </span>
-                    <span className='last'>Opoku</span>
-                </h2>
             </header>
 
-            <p className="intro-pg">
-                A Front-End web Developer/Designer currently based in the Washington DC-Baltimore Area let's come together &
-                <span className="text-link" datatype="">  Make Something Great</span>
+            <p className="text-4xl text-center p-6">
+                A Passionate Software & QA Engineer
+                let's come together & Make Something Great
             </p>
-
-            <ul>
-
-            </ul>
-
-
-            <span className="copyright"></span>
-        </div>
+        </div >
 
     )
 }

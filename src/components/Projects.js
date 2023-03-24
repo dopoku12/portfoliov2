@@ -52,7 +52,7 @@ function Projects() {
             projectName: 'weather-wiz',
             description: 'Check the weather in your city as well as other cities'
         }
-    ].map(i => ({ ...i, iconName: FaCode },{ ...i, status: false })
+    ].map(i => ({ ...i, iconName: FaCode }, { ...i, status: false })
 
     ));
 
@@ -74,9 +74,9 @@ function Projects() {
     const modalBox = projectLi.map(i => {
         return (
             i.status &&
-            <div key={i.id} className='modal-backdrop' onClick={exitModal} >
-                <div className='modalBox'>
-                    <button className='close' onClick={exitModal}>
+            <div key={i.id} className='' onClick={exitModal} >
+                <div className=''>
+                    <button className='' onClick={exitModal}>
                         X
                     </button>
                     <header>
@@ -84,7 +84,7 @@ function Projects() {
                             {i.projectName}
                         </h1>
                     </header>
-                    <p className='description'>
+                    <p className=''>
                         {i.description}
                     </p>
                 </div>
@@ -96,16 +96,17 @@ function Projects() {
 
     const projects = projectLi.map
         (i =>
+            <li key={i.id}  >
+                <div className=' max-w-m rounded 
+             
+                overflow-hidden '>
 
-            <li key={i.id} >
-                <div className='projects-card'>
                     <div className='img-container' >
                         <a href={i.link}>
                             <img src={i.imgName}
                                 id={i.projectName}
                                 alt="project-img"
                                 className='imgs' />
-
                             <div className='img-overlay'>
                                 <header >
                                     {i.projectName}
@@ -129,16 +130,16 @@ function Projects() {
         )
 
     return (
-        <div className='project-body'>
+        <div className='h-screen'>
 
-            <section className="project-content">
-                <article >
+            <section >
+                <article  >
                     <header >
                         <h1 className='projects-h1'>
                             Projects
                         </h1>
                     </header>
-                    <ul >
+                    <ul className=' grid grid-row-2 gap-4'>
                         {projects}
                     </ul>
                 </article>

@@ -3,7 +3,9 @@ import { Link } from "react-router-dom";
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import Projects from "./Projects";
-const Nav = ({ faIcons, FaAngleDown, FaAngleUp }) => {
+import Resume from "./Resume"
+import AboutMe from "./AboutMe"
+const Nav = ({ faIcons, FaAngleDown, }) => {
     console.log(faIcons);
 
     const [display, setDisplay] = useState('dark')
@@ -38,33 +40,32 @@ const Nav = ({ faIcons, FaAngleDown, FaAngleUp }) => {
                 })
                 }
             </ul>
-            {
 
-                // <Link to="/Projects" onClick={() => angleHandle}>
-                // </Link>
-            }
-            <footer className="m-12">
-                <Popover>
-                    <Popover.Button>
-                        <FaAngleDown color='orange' size={30} />
-                    </Popover.Button>
+            <Popover className="pop m-12">
+                <Popover.Button className='text-align'>
+                    <FaAngleDown color='orange' size={30} />
+                </Popover.Button>
 
-                    <Popover.Panel static>
+                <Popover.Panel static>
 
-                        <Transition
-                            enter="transition duration-100 ease-out"
-                            enterFrom="transform scale-95 opacity-0"
-                            enterTo="transform scale-100 opacity-100"
-                            leave="transition duration-75 ease-out"
-                            leaveFrom="transform scale-100 opacity-100"
-                            leaveTo="transform scale-95 opacity-0"
-                        >
-                            <Projects />
-                        </Transition>
-                    </Popover.Panel>
+                    <Transition
+                        enter="transition duration-100 ease-out"
+                        enterFrom="transform scale-95 opacity-0"
+                        enterTo="transform scale-100 opacity-100"
+                        leave="transition duration-75 ease-out"
+                        leaveFrom="transform scale-100 opacity-100"
+                        leaveTo="transform scale-95 opacity-0"
+                    >
+                        <Projects />
 
-                </Popover>
-            </footer>
+                        <Resume />
+
+                        <AboutMe />
+                    </Transition>
+                </Popover.Panel>
+
+            </Popover>
+
 
         </nav>
     )
