@@ -1,8 +1,7 @@
-import { useState } from 'react'
 import { FaCode } from 'react-icons/fa'
-
+import { Link } from "react-router-dom";
 function Projects() {
-    const [projectLi, setProjectLi] = useState([
+    const projectLi = [
 
         {
             id: 0,
@@ -57,47 +56,7 @@ function Projects() {
             description: ``,
             summary: 'Check the weather in your city as well as other cities'
         }
-    ].map(i => ({ ...i, iconName: FaCode }, { ...i, status: false })
-
-    ));
-
-    function displayModal(id) {
-        const change = projectLi.map
-            (i =>
-                i.id === id ? { ...i, status: true } : i
-            )
-        setProjectLi(change)
-    }
-
-    function exitModal() {
-        const reTurn = projectLi.map(
-            i => i.status === true ? { ...i, status: false } : i
-        )
-        setProjectLi(reTurn)
-    }
-
-    const modalBox = projectLi.map(i => {
-        return (
-            i.status &&
-            <div key={i.id} className='' onClick={exitModal} >
-                <div className=''>
-                    <button className='' onClick={exitModal}>
-                        X
-                    </button>
-                    <header>
-                        <h1>
-                            {i.projectName}
-                        </h1>
-                    </header>
-                    <p className=''>
-                        {i.summary}
-                    </p>
-                </div>
-            </div>
-        )
-    }
-
-    )
+    ].map(i => ({ ...i, iconName: FaCode }));
 
     const projects = projectLi.map
         (i =>
@@ -135,10 +94,8 @@ function Projects() {
 
     return (
         <div className='h-screen'>
-
             <section >
                 <article  >
-
                     <header >
                         <h1 >
                             Projects
@@ -149,10 +106,6 @@ function Projects() {
                     </ul>
                 </article>
             </section >
-            {
-                modalBox
-            }
-
         </div>
     )
 }

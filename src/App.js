@@ -1,16 +1,14 @@
 import Home from "./components/Home"
+import MyDisclosure from "./components/MyDisclosure";
 import Nav from "./components/Nav";
 import { Outlet } from "react-router-dom";
-import { useState } from 'react';
 import {
   FaMoon, FaSun, FaGithub,
   FaRegEnvelope, FaLinkedin,
-  FaAngleDown, FaAngleUp,
-  FaCode
+  FaAngleDown, FaCode
 } from 'react-icons/fa';
 
 function App() {
-
   let num = 0;
   const faIcons = [
     {
@@ -50,12 +48,10 @@ function App() {
 
   return (
     <div className=" dark:bg-slate-800  h-full">
+      <Nav faIcons={faIcons} />
       <Home FaCode={FaCode} />
-      <Nav faIcons={faIcons} FaAngleDown={FaAngleDown}
-        FaAngleUp={FaAngleUp}
-      />
       <main >
-
+        <MyDisclosure FaAngleDown={FaAngleDown} />
         <Outlet />
       </main>
 
