@@ -1,6 +1,6 @@
 function Education() {
     return (
-        <article className='Education'>
+        <article className='Education h-screen'>
 
             <h1 className="edu-type"> Coding BootCamps</h1>
             <p>Vanderbilt University Coding BootCamp - Nashville, TN</p>

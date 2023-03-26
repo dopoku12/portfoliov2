@@ -10,7 +10,8 @@ function Projects() {
             link: 'https://country-wiz.netlify.app/',
             code: 'https://github.com/dopoku12/countryWiz',
             projectName: 'country-wiz',
-            description: `This project displays country data from an api.
+            description: ``,
+            summary: `This project displays country data from an api.
              when you first open the site the users lat&long is collected using the built in javascript geolocation api,
              then using closures the user location is pulled by using the tom toms reverse gelocation api,
              then with react custom hooks the name of the country is then passed into another function which displays information about the users country
@@ -24,7 +25,8 @@ function Projects() {
             link: 'https://dopoku12.github.io/Dice-Game/',
             code: 'https://github.com/dopoku12/Dice-Game',
             projectName: 'Dice',
-            description: `Welcome to Dice, The goal of this Dice Game is to be the first player to hit 100!! In this game user roll's a Dice to accrue points. If the die lands on 1, the points they accumulated are set to 0. The user is able to hold if they feel their luck may be running out. At this point, player 2 takes a turn .`
+            description: ``,
+            summary: `Welcome to Dice, The goal of this Dice Game is to be the first player to hit 100!! In this game user roll's a Dice to accrue points. If the die lands on 1, the points they accumulated are set to 0. The user is able to hold if they feel their luck may be running out. At this point, player 2 takes a turn .`
         },
 
         {
@@ -33,7 +35,8 @@ function Projects() {
             link: 'https://dopoku12.github.io/take-a-guess/',
             code: 'https://github.com/dopoku12/take-a-guess',
             projectName: 'Take A Guess',
-            description: 'In this Game you will have to guess the right number(between 1-20) to win ,if you guess wrong you lose points and a hint will be given if your score hits zero you lose.  '
+            description: ``,
+            summary: 'In this Game you will have to guess the right number(between 1-20) to win ,if you guess wrong you lose points and a hint will be given if your score hits zero you lose.  '
         },
 
         {
@@ -42,7 +45,8 @@ function Projects() {
             link: ' https://dopoku12.github.io/country-search/',
             code: 'https://github.com/dopoku12/country-search',
             projectName: 'Country-Search',
-            description: 'A country search App'
+            description: ``,
+            summary: 'A country search App'
         },
         {
             id: 5,
@@ -50,7 +54,8 @@ function Projects() {
             link: 'https://weather-wiz.netlify.app/',
             code: 'https://github.com/dopoku12/weather',
             projectName: 'weather-wiz',
-            description: 'Check the weather in your city as well as other cities'
+            description: ``,
+            summary: 'Check the weather in your city as well as other cities'
         }
     ].map(i => ({ ...i, iconName: FaCode }, { ...i, status: false })
 
@@ -85,7 +90,7 @@ function Projects() {
                         </h1>
                     </header>
                     <p className=''>
-                        {i.description}
+                        {i.summary}
                     </p>
                 </div>
             </div>
@@ -96,17 +101,16 @@ function Projects() {
 
     const projects = projectLi.map
         (i =>
-            <li key={i.id}  >
+            <li key={i.id} className='items-center 
+            bg-gray-50 rounded-lg shadow 
+            sm:flex dark:bg-gray-800 dark:border-gray-700'  >
                 <div className=' max-w-m rounded 
-             
-                overflow-hidden '>
+            grid grid-cols-2
+                overflow-hidden'>
 
                     <div className='img-container' >
                         <a href={i.link}>
-                            <img src={i.imgName}
-                                id={i.projectName}
-                                alt="project-img"
-                                className='imgs' />
+                            <img src={i.imgName} alt="project-img" />
                             <div className='img-overlay'>
                                 <header >
                                     {i.projectName}
@@ -114,17 +118,17 @@ function Projects() {
                             </div>
                         </a>
                     </div>
+                    <p className='grid grid-row'>
+                        {i.description}
 
-                    <button className='project-btn'
-                        onClick={() => displayModal(i.id)} >
-                        View Description
-                    </button>
-                    <button className='project-btn'>
-                        <a className='code-link' href={i.code}>
+                        view More...
+                        <button>
+                            <a className='code-link' href={i.code}>
 
-                            View Code
-                        </a>
-                    </button>
+                                View Code
+                            </a>
+                        </button>
+                    </p>
                 </div>
             </li >
         )
@@ -134,12 +138,13 @@ function Projects() {
 
             <section >
                 <article  >
+
                     <header >
-                        <h1 className='projects-h1'>
+                        <h1 >
                             Projects
                         </h1>
                     </header>
-                    <ul className=' grid grid-row-2 gap-4'>
+                    <ul className=' grid grid-cols-2 gap-4'>
                         {projects}
                     </ul>
                 </article>

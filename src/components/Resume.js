@@ -3,7 +3,7 @@ import Skills from './Skills'
 
 function Resume() {
     return (
-        <div className=' h-full'>
+        <div className='h-screen'>
 
             <section className='card'>
                 <header >

@@ -2,7 +2,7 @@
 import { Link } from "react-router-dom"
 function AboutMe() {
     return (
-        <div className='aboutMe-container'>
+        <div className='aboutMe-container h-screen'>
 
             <section className='aboutMe-card card'>
                 <header >
