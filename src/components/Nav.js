@@ -1,7 +1,7 @@
 const Nav = ({ faIcons }) => {
     return (
         <nav>
-            <ul>
+            <ul className="grid grid-cols-5">
                 {faIcons.map(i => {
                     console.log(i);
                     return (

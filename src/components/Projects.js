@@ -97,7 +97,7 @@ function Projects() {
             <section >
                 <article  >
                     <header >
-                        <h1 >
+                        <h1 className='text-2xl m-5' >
                             Projects
                         </h1>
                     </header>

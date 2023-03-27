@@ -3,11 +3,13 @@ import Skills from './Skills'
 
 function Resume() {
     return (
-        <div className='h-screen'>
+        <div className='grid grid-cols-1 h-screen'>
 
             <section className='card'>
                 <header >
-                    <h2 > <span className='header'>My Resume</span></h2>
+                    <h2 >
+                        My Resume
+                    </h2>
                 </header>
 
                 <ul>

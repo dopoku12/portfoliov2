@@ -1,5 +1,4 @@
 @use "utils";
-
 @use "card-content";
 @use "projectBdrop";
 @tailwind base;
@@ -9,6 +8,10 @@
 * {
   margin: 0%;
   padding: 0%;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -25,10 +28,6 @@ body {
 
 .pop {
   @include utils.flex-box(column, center);
-}
-
-ul {
-  @include utils.flex-box(row, space-between);
 }
 
 main {

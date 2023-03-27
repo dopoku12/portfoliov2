@@ -12,7 +12,7 @@ function Education() {
 
             <h1 className="edu-type">High School Diploma</h1>
             <p>Parkdale HighSchool - Riverdale, MD</p>
-            <p>Acad</p>
+            <p>Academy of Homeland Security Sciences</p>
 
         </article>
     )

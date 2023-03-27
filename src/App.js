@@ -1,7 +1,8 @@
-import Home from "./components/Home"
-import MyDisclosure from "./components/MyDisclosure";
 import Nav from "./components/Nav";
-import { Outlet } from "react-router-dom";
+import Home from "./components/Home"
+import Projects from "./components/Projects";
+import Resume from "./components/Resume"
+import AboutMe from "./components/AboutMe"
 import {
   FaMoon, FaSun, FaGithub,
   FaRegEnvelope, FaLinkedin,
@@ -45,16 +46,22 @@ function App() {
 
   ].map(i => { return { ...i, id: num++ } })
 
-
   return (
     <div className=" dark:bg-slate-800  h-full">
       <Nav faIcons={faIcons} />
       <Home FaCode={FaCode} />
-      <main >
-        <MyDisclosure FaAngleDown={FaAngleDown} />
-        <Outlet />
+      <main>
+        <button className=" m-10 grid place-items-center">
+          <a href='#content'>
+            <FaAngleDown color='orange' size={30} />
+          </a>
+        </button>
+        <section id="content" className="grid grid-cols-1 ">
+          <Projects />
+          <Resume />
+          <AboutMe />
+        </section>
       </main>
-
     </div>
   );
 }
