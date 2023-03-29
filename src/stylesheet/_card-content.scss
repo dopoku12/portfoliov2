@@ -31,15 +31,3 @@ header {
 .img-overlay:hover {
   opacity: 1;
 }
-
-.resume-content {
-  @include utils.flex-box(column, center);
-  .sub-header {
-    border-top: 0.1rem solid;
-  }
-}
-
-.resume-icon-ul {
-  @include utils.flex-box(column, center);
-  padding-right: 20%;
-}

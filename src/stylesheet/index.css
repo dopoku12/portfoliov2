@@ -36,30 +36,13 @@ header {
   opacity: 1;
 }
 
-.resume-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.resume-content .sub-header {
-  border-top: 0.1rem solid;
-}
-
-.resume-icon-ul {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding-right: 20%;
-}
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 * {
   margin: 0%;
   padding: 0%;
+  box-sizing: border-box;
 }
 
 html {
@@ -68,14 +51,7 @@ html {
 
 body {
   font-family: Anek Gujarati;
-}
-
-.home {
-  width: 100%;
-  height: 80vh;
-  background-color: antiquewhite;
-  border-bottom-left-radius: 40%;
-  border-bottom-right-radius: 40%;
+  overflow-x: hidden;
 }
 
 .pop {
@@ -85,16 +61,15 @@ body {
   justify-content: center;
 }
 
-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
 a {
   text-decoration: none;
+}
+
+.box {
+  height: 100vh;
+  width: 100vw;
+  position: sticky;
+  top: 0px;
 }
 
 /*# sourceMappingURL=index.css.map */

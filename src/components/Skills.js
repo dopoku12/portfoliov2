@@ -1,7 +1,10 @@
-import { SiBootstrap, SiReact, SiSass, SiGithub, SiTailwindcss, SiNodedotjs, } from 'react-icons/si'
+import {
+    SiBootstrap, SiReact, SiSass, SiGithub, SiTailwindcss, SiNodedotjs,
+    SiJirasoftware
+} from 'react-icons/si'
 
 function Skills() {
-    const iconskills =
+    const iconSkills =
         [{
             id: 1,
             name: 'React.js',
@@ -37,22 +40,29 @@ function Skills() {
             name: 'Tailwind ',
             iconName: SiTailwindcss,
             color: '78cac3',
+        },
+
+        {
+            id: 7,
+            name: 'Jira ',
+            iconName: SiJirasoftware,
+            color: 'blue',
         }]
 
 
     const skillsLi = [
-        { id: 7, name: ' Critical Thinking' },
+        { id: 7, name: 'Agile Methodology' },
         { id: 8, name: ' Adaptability' },
         { id: 9, name: 'Unit Testing' },
-        { id: 10, name: 'Object Oriented Programing/OOP' },
+        { id: 10, name: 'Object Oriented Programming/OOP' },
         { id: 11, name: 'Responsive Web Design' },
         { id: 12, name: 'Seo' },
         { id: 13, name: 'Color Theory' },
     ]
 
     return (
-        <ul>{
-            iconskills.map(i => (
+        <ul className='grid place-items-center gap-4 '>{
+            iconSkills.map(i => (
                 <li key={i.id}>
                     {i.name}
                     <i.iconName size={20} color={i.color} />
@@ -60,8 +70,8 @@ function Skills() {
             ))
         }
             {
-
-                skillsLi.map(i => <li key={i.id}> {i.name}</li>)
+                skillsLi.map(i => <li key={i.id}>
+                    {i.name}</li>)
             }
         </ul>
     )

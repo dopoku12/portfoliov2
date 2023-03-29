@@ -1,6 +1,6 @@
 import { FaCode } from 'react-icons/fa'
 import { Link } from "react-router-dom";
-function Projects() {
+function Projects({ FaAngleDown }) {
     const projectLi = [
 
         {
@@ -60,7 +60,7 @@ function Projects() {
 
     const projects = projectLi.map
         (i =>
-            <li key={i.id} className='items-center 
+            <li key={i.id} className=' items-center 
             bg-gray-50 rounded-lg shadow 
             sm:flex dark:bg-gray-800 dark:border-gray-700'  >
                 <div className=' max-w-m rounded 
@@ -93,7 +93,7 @@ function Projects() {
         )
 
     return (
-        <div className='h-screen'>
+        <div className='box '>
             <section >
                 <article  >
                     <header >
@@ -104,6 +104,11 @@ function Projects() {
                     <ul className=' grid grid-cols-2 gap-4'>
                         {projects}
                     </ul>
+                    <button className=" ">
+                        <a href='#content'>
+                            <FaAngleDown color='orange' size={30} />
+                        </a>
+                    </button>
                 </article>
             </section >
         </div>

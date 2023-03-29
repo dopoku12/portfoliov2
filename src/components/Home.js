@@ -2,9 +2,9 @@ function Home({ FaCode, FaAngleDown }) {
 
     return (
 
-        <header className='home '>
+        <header className='box  grid place-items-center'>
 
-            <div className="flex flex-col items-center ">
+            <div className="grid place-items-center ">
                 <h1 className='text-xl m-5 flex'>
                     <FaCode color='orange' size={20} />  David  <span>Opoku</span>
                 </h1>
@@ -14,7 +14,11 @@ function Home({ FaCode, FaAngleDown }) {
                     let's come together & Make Something Great
                 </p>
             </div >
-
+            <button className=" ">
+                <a href='#content'>
+                    <FaAngleDown color='orange' size={30} />
+                </a>
+            </button>
         </header>
 
     )

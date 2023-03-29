@@ -1,46 +1,25 @@
 import Education from './Education';
 import Skills from './Skills'
 
-function Resume() {
+function Resume({ FaAngleDown }) {
     return (
-        <div className='grid grid-cols-1 h-screen'>
+        <div className='box '>
 
-            <section className='card'>
-                <header >
-                    <h2 >
-                        My Resume
-                    </h2>
-                </header>
+            <article>
+                <section className='grid place-items-center'>
 
-                <ul>
-                    <li>
-                        David Opoku
-                    </li>
-                    <li>
-                        +1 240-522-6634
-                    </li>
-                    <li>
-                        davidopoku30@gmail.com
-                    </li>
-
-                    <li>
-                        Riverdale, MD
-                    </li>
-                </ul>
-
-                <article className='resume-content'>
-                    <header className='sub-header'>
+                    <header>
                         <h2>Education</h2>
                     </header>
                     <Education />
 
-                    <header className='sub-header'>
-                        <h2>Highlighted Skills</h2>
+                    <header>
+                        <h2>Skills</h2>
                     </header>
                     <Skills />
+                </section>
 
-                </article>
-            </section>
+            </article>
         </div>
     );
 }

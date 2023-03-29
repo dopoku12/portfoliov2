@@ -49,17 +49,12 @@ function App() {
   return (
     <div className=" dark:bg-slate-800  h-full">
       <Nav faIcons={faIcons} />
-      <Home FaCode={FaCode} />
-      <main>
-        <button className=" m-10 grid place-items-center">
-          <a href='#content'>
-            <FaAngleDown color='orange' size={30} />
-          </a>
-        </button>
-        <section id="content" className="grid grid-cols-1 ">
-          <Projects />
-          <Resume />
-          <AboutMe />
+      <main className="grid place-items-center">
+        <Home FaCode={FaCode} FaAngleDown={FaAngleDown} />
+        <Projects FaAngleDown={FaAngleDown} />
+        <Resume FaAngleDown={FaAngleDown} />
+        <AboutMe FaAngleDown={FaAngleDown} />
+        <section id="content">
         </section>
       </main>
     </div>
