@@ -30,25 +30,12 @@ function App() {
       iconName: FaRegEnvelope,
       pathName: "mailto:davidopoku30@gmail.com",
       color: 'gray'
-    },
-
-
-    {
-      name: 'Light Mode',
-      iconName: FaSun,
-
     }
-    ,
-    {
-      name: 'Dark Mode',
-      iconName: FaMoon,
-    },
-
   ].map(i => { return { ...i, id: num++ } })
 
   return (
-    <div className=" dark:bg-slate-800  h-full">
-      <Nav faIcons={faIcons} />
+    <div className=" dark:text-white  h-full">
+      <Nav faIcons={faIcons} FaMoon={FaMoon} FaSun={FaSun} />
       <main className="grid place-items-center">
         <Home FaCode={FaCode} FaAngleDown={FaAngleDown} />
         <Projects FaAngleDown={FaAngleDown} />

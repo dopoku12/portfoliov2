@@ -3,7 +3,7 @@ import Skills from './Skills'
 
 function Resume({ FaAngleDown }) {
     return (
-        <div id='resume' className='box bg-white  grid place-items-center'>
+        <div id='resume' className='box bg-white dark:bg-slate-800 grid place-items-center'>
 
             <article>
                 <section className='grid place-items-center'>

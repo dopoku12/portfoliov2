@@ -2,7 +2,7 @@ import Education from './Education';
 
 function AboutMe({ FaAngleDown }) {
     return (
-        <div id='aboutMe' className='box bg-white'>
+        <div id='aboutMe' className='box bg-white dark:bg-slate-800'>
 
             <section className=''>
                 <header >

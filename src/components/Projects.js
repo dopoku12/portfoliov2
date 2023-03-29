@@ -93,7 +93,7 @@ function Projects({ FaAngleDown }) {
         )
 
     return (
-        <div id='projects' className='box bg-white grid place-items-center '>
+        <div id='projects' className='box bg-white dark:bg-slate-800 grid place-items-center '>
             <section >
                 <article  >
                     <header >
