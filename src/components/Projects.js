@@ -93,7 +93,7 @@ function Projects({ FaAngleDown }) {
         )
 
     return (
-        <div className='box '>
+        <div id='projects' className='box bg-white grid place-items-center '>
             <section >
                 <article  >
                     <header >
@@ -104,13 +104,13 @@ function Projects({ FaAngleDown }) {
                     <ul className=' grid grid-cols-2 gap-4'>
                         {projects}
                     </ul>
-                    <button className=" ">
-                        <a href='#content'>
-                            <FaAngleDown color='orange' size={30} />
-                        </a>
-                    </button>
                 </article>
             </section >
+            <button className=" ">
+                <a href='#resume'>
+                    <FaAngleDown color='orange' size={30} />
+                </a>
+            </button>
         </div>
     )
 }

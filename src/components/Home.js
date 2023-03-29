@@ -2,7 +2,7 @@ function Home({ FaCode, FaAngleDown }) {
 
     return (
 
-        <header className='box  grid place-items-center'>
+        <header className='box bg-white  grid place-items-center'>
 
             <div className="grid place-items-center ">
                 <h1 className='text-xl m-5 flex'>
@@ -15,7 +15,7 @@ function Home({ FaCode, FaAngleDown }) {
                 </p>
             </div >
             <button className=" ">
-                <a href='#content'>
+                <a href='#projects'>
                     <FaAngleDown color='orange' size={30} />
                 </a>
             </button>

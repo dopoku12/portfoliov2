@@ -1,8 +1,8 @@
+import Education from './Education';
 
-import { Link } from "react-router-dom"
 function AboutMe({ FaAngleDown }) {
     return (
-        <div className='h-screen'>
+        <div id='aboutMe' className='box bg-white'>
 
             <section className=''>
                 <header >
@@ -20,6 +20,11 @@ function AboutMe({ FaAngleDown }) {
                         let's come together & Make Something Great.
                     </p>
                 </article>
+                <header>
+                    <h2>Education</h2>
+                </header>
+                <Education />
+
             </section>
         </div>
     )
