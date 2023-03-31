@@ -9,7 +9,7 @@ function Projects({ FaAngleDown }) {
             link: 'https://country-wiz.netlify.app/',
             code: 'https://github.com/dopoku12/countryWiz',
             projectName: 'country-wiz',
-            description: ``,
+            description: `A country search App`,
             summary: `This project displays country data from an api.
              when you first open the site the users lat&long is collected using the built in javascript geolocation api,
              then using closures the user location is pulled by using the tom toms reverse gelocation api,
@@ -24,7 +24,7 @@ function Projects({ FaAngleDown }) {
             link: 'https://dopoku12.github.io/Dice-Game/',
             code: 'https://github.com/dopoku12/Dice-Game',
             projectName: 'Dice',
-            description: ``,
+            description: `A two player dice game`,
             summary: `Welcome to Dice, The goal of this Dice Game is to be the first player to hit 100!! In this game user roll's a Dice to accrue points. If the die lands on 1, the points they accumulated are set to 0. The user is able to hold if they feel their luck may be running out. At this point, player 2 takes a turn .`
         },
 
@@ -34,7 +34,7 @@ function Projects({ FaAngleDown }) {
             link: 'https://dopoku12.github.io/take-a-guess/',
             code: 'https://github.com/dopoku12/take-a-guess',
             projectName: 'Take A Guess',
-            description: ``,
+            description: `A guessing game`,
             summary: 'In this Game you will have to guess the right number(between 1-20) to win ,if you guess wrong you lose points and a hint will be given if your score hits zero you lose.  '
         },
 
@@ -45,7 +45,7 @@ function Projects({ FaAngleDown }) {
             code: 'https://github.com/dopoku12/country-search',
             projectName: 'Country-Search',
             description: ``,
-            summary: 'A country search App'
+            summary: ''
         },
         {
             id: 5,
@@ -53,21 +53,21 @@ function Projects({ FaAngleDown }) {
             link: 'https://weather-wiz.netlify.app/',
             code: 'https://github.com/dopoku12/weather',
             projectName: 'weather-wiz',
-            description: ``,
+            description: `View the weather in your area or another city`,
             summary: 'Check the weather in your city as well as other cities'
         }
     ].map(i => ({ ...i, iconName: FaCode }));
 
     const projects = projectLi.map
         (i =>
-            <li key={i.id} className=' items-center 
+            <li key={i.id} className='items-center 
             bg-gray-50 rounded-lg shadow 
             sm:flex dark:bg-gray-800 dark:border-gray-700'  >
                 <div className=' max-w-m rounded 
             grid grid-cols-2
                 overflow-hidden'>
 
-                    <div className='img-container' >
+                    <div className='img-container ' >
                         <a href={i.link}>
                             <img src={i.imgName} alt="project-img" />
                             <div className='img-overlay'>
@@ -77,10 +77,11 @@ function Projects({ FaAngleDown }) {
                             </div>
                         </a>
                     </div>
-                    <p className='grid grid-row'>
+                    <p className='grid grid-row p-5 '>
                         {i.description}
-
-                        view More...
+                        <label htmlFor="">
+                            view More...
+                        </label>
                         <button>
                             <a className='code-link' href={i.code}>
 
@@ -93,7 +94,8 @@ function Projects({ FaAngleDown }) {
         )
 
     return (
-        <div id='projects' className='box bg-white dark:bg-slate-800 grid place-items-center '>
+        <div id='projects'
+            className='box bg-white dark:bg-slate-800 grid place-items-center '>
             <section >
                 <article  >
                     <header >

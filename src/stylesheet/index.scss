@@ -26,6 +26,10 @@ body {
   @include utils.flex-box(column, center);
 }
 
+img {
+  height: 100%;
+  width: 100%;
+}
 // main {
 //   @include utils.flex-box(column, center);
 //   text-align: center;

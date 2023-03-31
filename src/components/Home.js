@@ -5,13 +5,13 @@ function Home({ FaCode, FaAngleDown, faIcons }) {
         <header className='box  bg-white dark:bg-slate-800 grid place-items-center'>
 
             <div className="grid place-items-center ">
-                <h1 className='text-xl m-5 flex'>
-                    <FaCode color='orange' size={20} />  David<span>Opoku</span>
+                <h1 className='text-xl m-2 flex'>
+                    <FaCode color='orange' size={20} />
+                    Software/QA Engineer
                 </h1>
 
                 <p className="text-2xl typewriter text-center">
-                    A Passionate Software & QA Engineer
-                    let's Make Something Great
+                    👋🏿  Hi I'm David, I turn dreams and visions into code.
                 </p>
             </div >
 
