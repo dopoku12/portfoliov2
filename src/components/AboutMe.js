@@ -1,25 +1,23 @@
+import Education from './Education';
 
-import { Link } from "react-router-dom"
-function AboutMe() {
+function AboutMe({ FaAngleDown }) {
     return (
-        <div className='aboutMe-container'>
+        <div id='aboutMe' className='box grid place-items-center bg-white dark:bg-slate-800'>
 
-            <section className='aboutMe-card card'>
-                <header >
-                    <h2>
-                        <span className='header'>
-                            AboutMe
-                        </span>
-                    </h2>
+            <section className=''>
+                <header className='text-2xl m-5'>
+                    <h2>Education</h2>
                 </header>
-                <article className='AboutMe-content'>
+                <Education />
+                <header className='text-2xl m-5'>
+                    <h1>
+                        AboutMe
+                    </h1>
+                </header>
+                <article >
                     <p>
                         Hello My name is David Opoku ,
-
-                        <Link to="/Projects">
-                            <span className="aboutMe-projects-link">
-                                I Design and Develop Websites </span>
-                        </Link>
+                        I Design and Develop Websites
                         for those who want their vision or story expressed through a digital canvas.
                         I want to capture your ideas and create something that can perfectly encapsulate you and your brand,
                         I am motivated by the creative process and the challenges that are presented by innovation.
