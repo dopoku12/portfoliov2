@@ -2,7 +2,7 @@ import Nav from "./components/Nav";
 import Home from "./components/Home"
 import Projects from "./components/Projects";
 import Resume from "./components/Resume"
-import Education from "./components/Education"
+import AboutMe from "./components/AboutMe"
 import {
   FaMoon, FaSun, FaGithub,
   FaRegEnvelope, FaLinkedin,
@@ -33,14 +33,14 @@ function App() {
   ].map(i => { return { ...i, id: num++ } })
 
   return (
-    <div className=" dark:text-white  h-full">
+    <div className=" dark:text-white box">
       <Nav TiAdjustContrast={TiAdjustContrast} />
       <main className="grid place-items-center">
         <Home FaCode={FaCode} faIcons={faIcons}
           FaAngleDown={FaAngleDown} />
         <Projects FaAngleDown={FaAngleDown} />
         <Resume FaAngleDown={FaAngleDown} />
-        <Education FaAngleDown={FaAngleDown} />
+        <AboutMe />
         <section id="content">
         </section>
         <footer>

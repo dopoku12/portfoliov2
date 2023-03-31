@@ -2,16 +2,16 @@ function Home({ FaCode, FaAngleDown, faIcons }) {
 
     return (
 
-        <header className='box bg-white dark:bg-slate-800 grid place-items-center'>
+        <header className='box  bg-white dark:bg-slate-800 grid place-items-center'>
 
             <div className="grid place-items-center ">
                 <h1 className='text-xl m-5 flex'>
-                    <FaCode color='orange' size={20} />  David  <span>Opoku</span>
+                    <FaCode color='orange' size={20} />  David<span>Opoku</span>
                 </h1>
 
-                <p className="text-4xl text-center p-6">
+                <p className="text-2xl typewriter text-center">
                     A Passionate Software & QA Engineer
-                    let's come together & Make Something Great
+                    let's Make Something Great
                 </p>
             </div >
 
