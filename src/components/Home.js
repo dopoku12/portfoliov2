@@ -24,8 +24,8 @@ function Home({ FaCode, FaAngleDown, faIcons }) {
                                 <a href={i.pathName}>
                                     <p >
                                         {i.name}
-                                        <i.iconName size={30} color={i.color} />
-
+                                        <i.iconName size={30}
+                                            color={i.color} />
                                     </p>
                                 </a>
                             </li>

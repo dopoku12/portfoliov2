@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
 
-const Nav = ({ FaSun, FaMoon }) => {
+const Nav = ({ TiAdjustContrast }) => {
     const [theme, setTheme] = useState('light')
     useEffect(() => {
         theme === 'dark' ?
@@ -21,12 +21,7 @@ const Nav = ({ FaSun, FaMoon }) => {
                 <li className="">
                     <button onClick={themeHandler}>
 
-                        {
-                            theme === 'dark' ?
-                                <FaSun size={30} />
-                                :
-                                <FaMoon size={30} />
-                        }
+                        <TiAdjustContrast size={35} />
                     </button>
                 </li>
             </ul>

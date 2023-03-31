@@ -1,6 +1,6 @@
 function Education() {
     return (
-        <article>
+        <article id="edu" className="grid place-items-center">
             <br />
             <h1>Wilmington University - New Castle, DE</h1>
             <p >Computer Science</p>

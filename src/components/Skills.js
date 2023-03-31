@@ -8,51 +8,42 @@ function Skills() {
     let num = 0
     const iconSkills =
         [{
-
             name: 'React.js',
             iconName: SiReact,
             color: '1de6f8',
         },
         {
-
             name: 'Node.js',
             iconName: SiNodedotjs,
             color: '4E9B47 ',
         },
         {
-
             name: 'Bootstrap',
             iconName: SiBootstrap,
             color: '563d7c',
         },
         {
-
             name: 'Sass',
             iconName: SiSass,
             color: 'cc6699',
         },
 
         {
-
             name: 'Tailwind ',
             iconName: SiTailwindcss,
             color: '78cac3',
         },
         {
-
             name: 'Material ui',
             iconName: SiMaterialui,
             color: 'blue',
         },
         {
-
             name: 'Github',
             iconName: SiGithub,
-            color: '424242',
         },
 
         {
-
             name: 'Jira ',
             iconName: SiJirasoftware,
             color: 'blue',
