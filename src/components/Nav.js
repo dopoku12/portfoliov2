@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
 
-const Nav = ({ faIcons, FaSun, FaMoon }) => {
+const Nav = ({ FaSun, FaMoon }) => {
     const [theme, setTheme] = useState('light')
     useEffect(() => {
         theme === 'dark' ?
@@ -18,35 +18,14 @@ const Nav = ({ faIcons, FaSun, FaMoon }) => {
     return (
         <nav className="dark:bg-slate-800">
             <ul className="grid  grid-cols-5">
-                {faIcons.map(i => {
-                    console.log(i);
-                    return (
-                        <li key={i.id} >
-                            <a href={i.pathName}>
-                                <p >
-                                    {i.name}
-                                    <i.iconName size={30} color={i.color} />
-
-                                </p>
-                            </a>
-                        </li>
-                    )
-                })
-                }
                 <li className="">
                     <button onClick={themeHandler}>
 
                         {
                             theme === 'dark' ?
-                                <p className="">
-                                    Light Mode
-                                    <FaSun size={30} />
-                                </p>
+                                <FaSun size={30} />
                                 :
-                                <p >
-                                    Dark Mode
-                                    <FaMoon size={30} />
-                                </p>
+                                <FaMoon size={30} />
                         }
                     </button>
                 </li>

@@ -20,7 +20,7 @@ function Projects({ FaAngleDown }) {
         },
         {
             id: 1,
-            imgName: '/projects/pig-game.png',
+            imgName: '/projects/dice-game.png',
             link: 'https://dopoku12.github.io/Dice-Game/',
             code: 'https://github.com/dopoku12/Dice-Game',
             projectName: 'Dice',
@@ -49,7 +49,7 @@ function Projects({ FaAngleDown }) {
         },
         {
             id: 5,
-            imgName: '/projects/weather-wiz.png',
+            imgName: '/projects/weatherApp.png',
             link: 'https://weather-wiz.netlify.app/',
             code: 'https://github.com/dopoku12/weather',
             projectName: 'weather-wiz',

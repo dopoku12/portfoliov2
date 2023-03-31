@@ -35,15 +35,19 @@ function App() {
 
   return (
     <div className=" dark:text-white  h-full">
-      <Nav faIcons={faIcons} FaMoon={FaMoon} FaSun={FaSun} />
+      <Nav FaMoon={FaMoon} FaSun={FaSun} />
       <main className="grid place-items-center">
-        <Home FaCode={FaCode} FaAngleDown={FaAngleDown} />
+        <Home FaCode={FaCode} faIcons={faIcons}
+          FaAngleDown={FaAngleDown} />
         <Projects FaAngleDown={FaAngleDown} />
         <Resume FaAngleDown={FaAngleDown} />
         <AboutMe FaAngleDown={FaAngleDown} />
         <section id="content">
         </section>
       </main>
+      <footer>
+        © copyright 2021
+      </footer>
     </div>
   );
 }

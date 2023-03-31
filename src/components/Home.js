@@ -1,4 +1,4 @@
-function Home({ FaCode, FaAngleDown }) {
+function Home({ FaCode, FaAngleDown, faIcons }) {
 
     return (
 
@@ -14,6 +14,25 @@ function Home({ FaCode, FaAngleDown }) {
                     let's come together & Make Something Great
                 </p>
             </div >
+
+            <ul className="grid grid-cols-3 gap-10 place-items-center">
+                {
+                    faIcons.map(i => {
+                        console.log(i);
+                        return (
+                            <li key={i.id} >
+                                <a href={i.pathName}>
+                                    <p >
+                                        {i.name}
+                                        <i.iconName size={30} color={i.color} />
+
+                                    </p>
+                                </a>
+                            </li>
+                        )
+                    })
+                }
+            </ul>
             <button className=" ">
                 <a href='#projects'>
                     <FaAngleDown color='orange' size={30} />
