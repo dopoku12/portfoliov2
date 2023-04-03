@@ -4,7 +4,7 @@ import Projects from "./components/Projects";
 import Resume from "./components/Resume"
 import AboutMe from "./components/AboutMe"
 import {
-  FaMoon, FaSun, FaGithub,
+  FaGithub,
   FaRegEnvelope, FaLinkedin,
   FaAngleDown, FaCode
 } from 'react-icons/fa';
@@ -33,7 +33,7 @@ function App() {
   ].map(i => { return { ...i, id: num++ } })
 
   return (
-    <div className=" dark:text-white box">
+    <div className=" dark:bg-slate-800 dark:text-white box">
       <Nav TiAdjustContrast={TiAdjustContrast} />
       <main className="grid place-items-center">
         <Home FaCode={FaCode} faIcons={faIcons}
@@ -43,7 +43,7 @@ function App() {
         <AboutMe />
         <section id="content">
         </section>
-        <footer>
+        <footer className="dark:bg-slate-800 ">
           © copyright 2021
         </footer>
       </main>

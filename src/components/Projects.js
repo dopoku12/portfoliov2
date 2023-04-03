@@ -38,15 +38,15 @@ function Projects({ FaAngleDown }) {
             summary: 'In this Game you will have to guess the right number(between 1-20) to win ,if you guess wrong you lose points and a hint will be given if your score hits zero you lose.  '
         },
 
-        {
-            id: 3,
-            imgName: '/projects/country-search.png',
-            link: ' https://dopoku12.github.io/country-search/',
-            code: 'https://github.com/dopoku12/country-search',
-            projectName: 'Country-Search',
-            description: ``,
-            summary: ''
-        },
+        // {
+        //     id: 3,
+        //     imgName: '/projects/country-search.png',
+        //     link: ' https://dopoku12.github.io/country-search/',
+        //     code: 'https://github.com/dopoku12/country-search',
+        //     projectName: 'Country-Search',
+        //     description: ``,
+        //     summary: ''
+        // },
         {
             id: 5,
             imgName: '/projects/weatherApp.png',
@@ -64,7 +64,7 @@ function Projects({ FaAngleDown }) {
             bg-gray-50 rounded-lg shadow 
             sm:flex dark:bg-gray-800 dark:border-gray-700'  >
                 <div className=' max-w-m rounded 
-            grid grid-cols-2
+            grid grid-cols-1
                 overflow-hidden'>
 
                     <div className='img-container ' >
@@ -77,18 +77,16 @@ function Projects({ FaAngleDown }) {
                             </div>
                         </a>
                     </div>
-                    <p className='grid grid-row p-5 '>
-                        {i.description}
-                        <label htmlFor="">
-                            view More...
-                        </label>
+                    <div className='grid grid-rows-2 m-5 '>
+                        <p className='text-center whitespace-nowrap mb-5'>
+                            {i.description}
+                        </p>
                         <button>
                             <a className='code-link' href={i.code}>
-
                                 View Code
                             </a>
                         </button>
-                    </p>
+                    </div>
                 </div>
             </li >
         )
