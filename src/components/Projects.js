@@ -63,7 +63,8 @@ function Projects({ FaAngleDown }) {
             <li key={i.id} className='items-center 
             bg-gray-50 rounded-lg shadow 
             sm:flex dark:bg-gray-800 dark:border-gray-700'  >
-                <div className=' max-w-m rounded 
+
+                <div className='max-w-m rounded 
             grid grid-cols-1
                 overflow-hidden'>
 
@@ -78,7 +79,7 @@ function Projects({ FaAngleDown }) {
                         </a>
                     </div>
                     <div className='grid grid-rows-2 m-5 '>
-                        <p className='text-center whitespace-nowrap mb-5'>
+                        <p className='text-center mb-5'>
                             {i.description}
                         </p>
                         <button>
@@ -101,7 +102,7 @@ function Projects({ FaAngleDown }) {
                             Projects
                         </h1>
                     </header>
-                    <ul className=' grid grid-cols-2 gap-4'>
+                    <ul className='card grid grid-cols-2 gap-4'>
                         {projects}
                     </ul>
                 </article>
