@@ -112,7 +112,7 @@ function Projects({ FaAngleDown }) {
                     </ul>
                 </article>
             </section >
-            <button className="">
+            <button className="hover:bg-orange-200 rounded-full">
                 <a href='#resume'>
                     <FaAngleDown color='orange' size={30} />
                 </a>

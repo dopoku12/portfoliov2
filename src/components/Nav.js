@@ -18,7 +18,7 @@ const Nav = ({ TiAdjustContrast }) => {
     return (
         <nav className="dark:bg-slate-800">
             <ul className="grid  grid-cols-5">
-                <li className="">
+                <li>
                     <button onClick={themeHandler}>
 
                         <TiAdjustContrast size={35} />

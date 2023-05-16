@@ -19,12 +19,15 @@ function Home({ FaCode, FaAngleDown, faIcons }) {
                 {
                     faIcons.map(i => {
                         return (
-                            <li key={i.id} >
+                            <li key={i.id} className=" grid
+                            place-items-center rounded-full w-20 h-20 
+                             hover:shadow-lg 
+                           " >
                                 <a href={i.pathName}>
                                     <p >
-                                        {i.name}
                                         <i.iconName size={30}
                                             color={i.color} />
+                                        {i.name}
                                     </p>
                                 </a>
                             </li>
@@ -32,7 +35,7 @@ function Home({ FaCode, FaAngleDown, faIcons }) {
                     })
                 }
             </ul>
-            <button className=" ">
+            <button className="hover:bg-orange-200 rounded-full">
                 <a href='#projects'>
                     <FaAngleDown color='orange' size={30} />
                 </a>
