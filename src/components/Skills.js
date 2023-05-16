@@ -2,7 +2,7 @@ import {
     SiBootstrap, SiReact, SiPhp, SiSass, SiGithub,
     SiTailwindcss, SiNodedotjs, SiJirasoftware,
     SiExpress, SiMongodb, SiMysql,
-    SiMaterialui, SiGit, SiChakraui,
+    SiMaterialui, SiChakraui,
 } from 'react-icons/si'
 
 function Skills() {
