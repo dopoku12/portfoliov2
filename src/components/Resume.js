@@ -6,13 +6,9 @@ function Resume() {
 
             <article>
                 <section className='grid place-items-center'>
-
-                    <header className='text-2xl m-5'>
-                        <h2>Skills</h2>
-                    </header>
                     <Skills />
+                    <AboutMe />
                 </section>
-                <AboutMe />
             </article>
         </div>
     );

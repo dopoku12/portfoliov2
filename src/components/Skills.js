@@ -97,20 +97,26 @@ function Skills() {
     ].map(i => ({ ...i, id: num++ }))
 
     return (
-        <ul className='grid grid-cols-4  m-0 gap-10 place-items-center '>
-            {
-                iconSkills.map(i => (
-                    <li key={i.id}>
-                        {i.name}
-                        <i.iconName size={30} color={i.color} />
-                    </li>
-                ))
-            }
-            {
-                skillsLi.map(i => <li key={i.id}>
-                    {i.name}</li>)
-            }
-        </ul>
+        <>
+            <header className='text-2xl m-5'>
+                <h2>Skills</h2>
+            </header>
+            <ul className='grid grid-cols-4  m-0 gap-10 place-items-center '>
+
+                {
+                    iconSkills.map(i => (
+                        <li key={i.id}>
+                            {i.name}
+                            <i.iconName size={30} color={i.color} />
+                        </li>
+                    ))
+                }
+                {
+                    skillsLi.map(i => <li key={i.id}>
+                        {i.name}</li>)
+                }
+            </ul>
+        </>
     )
 }
 
