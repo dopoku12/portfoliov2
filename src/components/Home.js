@@ -4,7 +4,7 @@ function Home({ FaCode, FaAngleDown, faIcons }) {
 
         <header className='box  bg-white dark:bg-slate-800 grid place-items-center'>
 
-            <div className="grid place-items-center ">
+            <div id="home" className="grid place-items-center ">
                 <h1 className='text-xl m-2 flex'>
                     <FaCode color='orange' size={20} />
                     Software/QA Engineer
@@ -18,7 +18,6 @@ function Home({ FaCode, FaAngleDown, faIcons }) {
             <ul className="grid grid-cols-3 gap-10 place-items-center">
                 {
                     faIcons.map(i => {
-                        console.log(i);
                         return (
                             <li key={i.id} >
                                 <a href={i.pathName}>

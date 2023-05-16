@@ -1,13 +1,24 @@
 import {
-    SiBootstrap, SiReact, SiSass, SiGithub,
+    SiBootstrap, SiReact, SiPhp, SiSass, SiGithub,
     SiTailwindcss, SiNodedotjs, SiJirasoftware,
-    SiMaterialui,
+    SiExpress, SiMongodb, SiMysql,
+    SiMaterialui, SiGit, SiChakraui,
 } from 'react-icons/si'
 
 function Skills() {
     let num = 0
     const iconSkills =
         [{
+            name: 'PHP',
+            iconName: SiPhp,
+            color: 'cc6699',
+        },
+        {
+            name: 'MySQL',
+            iconName: SiMysql,
+            color: 'skyblue',
+        },
+        {
             name: 'React.js',
             iconName: SiReact,
             color: '1de6f8',
@@ -15,6 +26,16 @@ function Skills() {
         {
             name: 'Node.js',
             iconName: SiNodedotjs,
+            color: '4E9B47 ',
+        },
+        {
+            name: 'Express.js',
+            iconName: SiExpress,
+            color: '4E9B47 ',
+        },
+        {
+            name: 'Mongodb',
+            iconName: SiMongodb,
             color: '4E9B47 ',
         },
         {
@@ -31,6 +52,11 @@ function Skills() {
         {
             name: 'Tailwind ',
             iconName: SiTailwindcss,
+            color: '78cac3',
+        },
+        {
+            name: 'Chakra ui',
+            iconName: SiChakraui,
             color: '78cac3',
         },
         {
@@ -51,23 +77,23 @@ function Skills() {
 
 
     const skillsLi = [
-        { name: 'Agile Methodology' },
+        { name: 'Agile ' },
+        { name: 'Kanban' },
+        { name: 'Scrum' },
         { name: ' ArcGIS' },
         { name: 'Unit Testing' },
-        { name: 'Object Oriented Programming/OOP' },
-        { name: 'Functional Programming' },
-        { name: 'Responsive Web Design' },
+
         { name: 'Seo' },
-        { name: 'Color Theory' },
+        { name: '' },
     ].map(i => ({ ...i, id: num++ }))
 
     return (
-        <ul className='grid grid-cols-4 place-items-center gap-4 '>
+        <ul className='box grid grid-cols-4  m-0 gap-0 place-items-center '>
             {
                 iconSkills.map(i => (
                     <li key={i.id}>
                         {i.name}
-                        <i.iconName size={20} color={i.color} />
+                        <i.iconName size={30} color={i.color} />
                     </li>
                 ))
             }

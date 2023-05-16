@@ -1,8 +1,10 @@
+import { FaAngleUp } from 'react-icons/fa';
 import Education from './Education';
 
-function AboutMe({ FaAngleDown }) {
+function AboutMe() {
     return (
-        <div id='aboutMe' className='box grid place-items-center bg-white dark:bg-slate-800'>
+        <div className='box grid place-items-center 
+         dark:bg-slate-800'>
 
             <section className=''>
                 <header className='text-2xl m-5'>
@@ -25,6 +27,15 @@ function AboutMe({ FaAngleDown }) {
                     </p>
                 </article>
             </section>
+            <button className=" ">
+                <a href='#projects'>
+                    <FaAngleUp color='orange' size={30} />
+                </a>
+
+            </button>
+            <footer className=" grid place-items-center ">
+                David Opoku ©copyright 2021
+            </footer>
         </div>
     )
 }

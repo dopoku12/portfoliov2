@@ -53,7 +53,7 @@ function Projects({ FaAngleDown }) {
             link: 'https://weather-wiz.netlify.app/',
             code: 'https://github.com/dopoku12/weather',
             projectName: 'weather-wiz',
-            description: `View the weather in your area or another city`,
+            description: `A weather search app`,
             summary: 'Check the weather in your city as well as other cities'
         }
     ].map(i => ({ ...i, iconName: FaCode }));
@@ -79,7 +79,7 @@ function Projects({ FaAngleDown }) {
                         </a>
                     </div>
                     <div className='grid grid-rows-2 m-5 '>
-                        <p className='text-center mb-5'>
+                        <p className='text-center mb-2'>
                             {i.description}
                         </p>
                         <button>
@@ -102,12 +102,17 @@ function Projects({ FaAngleDown }) {
                             Projects
                         </h1>
                     </header>
-                    <ul className='card grid grid-cols-2 gap-4'>
+                    <ul className=' grid card
+                    md:grid-cols-4 gap-5
+                    md:m-2
+                    grid-cols-2 
+                    sm:grid-cols-2 
+                    ' >
                         {projects}
                     </ul>
                 </article>
             </section >
-            <button className=" ">
+            <button className="">
                 <a href='#resume'>
                     <FaAngleDown color='orange' size={30} />
                 </a>

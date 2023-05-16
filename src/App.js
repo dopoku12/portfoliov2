@@ -2,11 +2,10 @@ import Nav from "./components/Nav";
 import Home from "./components/Home"
 import Projects from "./components/Projects";
 import Resume from "./components/Resume"
-import AboutMe from "./components/AboutMe"
 import {
   FaGithub,
   FaRegEnvelope, FaLinkedin,
-  FaAngleDown, FaCode
+  FaAngleDown, FaAngleUp, FaCode
 } from 'react-icons/fa';
 import { TiAdjustContrast } from 'react-icons/ti'
 
@@ -39,15 +38,11 @@ function App() {
         <Home FaCode={FaCode} faIcons={faIcons}
           FaAngleDown={FaAngleDown} />
         <Projects FaAngleDown={FaAngleDown} />
-        <Resume FaAngleDown={FaAngleDown} />
-        <AboutMe />
-        <section id="content">
-        </section>
-        <footer className="dark:bg-slate-800 ">
-          © copyright 2021
-        </footer>
+        <Resume />
       </main>
+
     </div>
+
   );
 }
 

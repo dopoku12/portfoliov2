@@ -1,5 +1,6 @@
 import Skills from './Skills'
-function Resume({ FaAngleDown }) {
+import AboutMe from './AboutMe';
+function Resume() {
     return (
         <div id='resume' className='box bg-white dark:bg-slate-800 grid place-items-center'>
 
@@ -11,12 +12,8 @@ function Resume({ FaAngleDown }) {
                     </header>
                     <Skills />
                 </section>
+                <AboutMe />
             </article>
-            <button className=" ">
-                <a href='#edu'>
-                    <FaAngleDown color='orange' size={30} />
-                </a>
-            </button>
         </div>
     );
 }
