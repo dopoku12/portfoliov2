@@ -1,4 +1,4 @@
-import { FaAngleUp } from 'react-icons/fa';
+//import { FaAngleUp } from 'react-icons/fa';
 import Education from './Education';
 
 function AboutMe() {
@@ -27,12 +27,14 @@ function AboutMe() {
                     </p>
                 </article>
             </section>
-            <button className=" ">
-                <a href='#projects'>
-                    <FaAngleUp color='orange' size={30} />
-                </a>
+            {
 
-            </button>
+                // <button className=" ">
+                // <a href='#home'>
+                // <FaAngleUp color='orange' size={30} />
+                // </a>
+                // </button>
+            }
             <footer className=" grid place-items-center ">
                 David Opoku ©copyright 2021
             </footer>

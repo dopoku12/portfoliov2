@@ -5,7 +5,7 @@ import Resume from "./components/Resume"
 import {
   FaGithub,
   FaRegEnvelope, FaLinkedin,
-  FaAngleDown, FaAngleUp, FaCode
+  FaAngleDown, FaCode
 } from 'react-icons/fa';
 import { TiAdjustContrast } from 'react-icons/ti'
 

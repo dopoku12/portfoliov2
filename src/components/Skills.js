@@ -9,14 +9,14 @@ function Skills() {
     let num = 0
     const iconSkills =
         [{
-            name: 'PHP',
-            iconName: SiPhp,
-            color: 'cc6699',
+            name: 'Mongodb',
+            iconName: SiMongodb,
+            color: '4E9B47 ',
         },
         {
-            name: 'MySQL',
-            iconName: SiMysql,
-            color: 'skyblue',
+            name: 'Express.js',
+            iconName: SiExpress,
+            color: '4E9B47 ',
         },
         {
             name: 'React.js',
@@ -29,20 +29,37 @@ function Skills() {
             color: '4E9B47 ',
         },
         {
-            name: 'Express.js',
-            iconName: SiExpress,
-            color: '4E9B47 ',
+            name: 'MySQL',
+            iconName: SiMysql,
+            color: 'skyblue',
+        },
+
+        {
+            name: 'PHP',
+            iconName: SiPhp,
+            color: 'cc6699',
         },
         {
-            name: 'Mongodb',
-            iconName: SiMongodb,
-            color: '4E9B47 ',
+            name: 'Chakra ui',
+            iconName: SiChakraui,
+            color: '78cac3',
         },
+
+        {
+            name: 'Material ui',
+            iconName: SiMaterialui,
+            color: 'blue',
+        },
+
+
+
+
         {
             name: 'Bootstrap',
             iconName: SiBootstrap,
             color: '563d7c',
         },
+
         {
             name: 'Sass',
             iconName: SiSass,
@@ -54,32 +71,24 @@ function Skills() {
             iconName: SiTailwindcss,
             color: '78cac3',
         },
+
+
         {
-            name: 'Chakra ui',
-            iconName: SiChakraui,
-            color: '78cac3',
-        },
-        {
-            name: 'Material ui',
-            iconName: SiMaterialui,
+            name: 'Jira ',
+            iconName: SiJirasoftware,
             color: 'blue',
         },
         {
             name: 'Github',
             iconName: SiGithub,
         },
-
-        {
-            name: 'Jira ',
-            iconName: SiJirasoftware,
-            color: 'blue',
-        }].map(i => ({ ...i, id: num++ }))
+        ].map(i => ({ ...i, id: num++ }))
 
 
     const skillsLi = [
         { name: 'Agile ' },
-        { name: 'Kanban' },
-        { name: 'Scrum' },
+        { name: '' },
+        { name: '' },
         { name: ' ArcGIS' },
         { name: 'Unit Testing' },
 
@@ -88,7 +97,7 @@ function Skills() {
     ].map(i => ({ ...i, id: num++ }))
 
     return (
-        <ul className='box grid grid-cols-4  m-0 gap-0 place-items-center '>
+        <ul className='grid grid-cols-4  m-0 gap-10 place-items-center '>
             {
                 iconSkills.map(i => (
                     <li key={i.id}>
