@@ -1,7 +1,7 @@
 import {
-    SiBootstrap, SiReact, SiPhp, SiSass, SiGithub,
+    SiBootstrap, SiReact, SiSass, SiGithub,
     SiTailwindcss, SiNodedotjs, SiJirasoftware,
-    SiExpress, SiMongodb, SiMysql, SiJest, SiVite,
+    SiExpress, SiMongodb, SiJest, SiVite,
     SiMaterialui, SiChakraui, SiMicrosoftazure, SiJquery
 } from 'react-icons/si'
 
