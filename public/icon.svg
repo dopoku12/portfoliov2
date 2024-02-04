@@ -1,5 +1,2 @@
-<svg width="500" height="500" viewBox="0 0 400 400" fill="blue" xmlns="http://www.w3.org/2000/svg">
-<path d="M273.38 122.12L350 198.74L270.86 277.88" stroke="#00F252" stroke-width="32" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M126.62 122.12L50 198.74L129.14 277.88" stroke="#00F252" stroke-width="32" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M240.32 97.1201L149.89 302.89" stroke="#000000" stroke-width="30" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
+<?xml version="1.0" ?><svg class="feather feather-pen-tool" fill="none" height="24" stroke="orange" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg>
+
