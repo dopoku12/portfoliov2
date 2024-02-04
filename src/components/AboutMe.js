@@ -1,16 +1,10 @@
 //import { FaAngleUp } from 'react-icons/fa';
-import Education from './Education';
-
 function AboutMe() {
     return (
         <div className='box grid place-items-center 
          dark:bg-slate-800'>
 
             <section className=''>
-                <header className='text-2xl m-5'>
-                    <h2>Education</h2>
-                </header>
-                <Education />
                 <header className='text-2xl m-5'>
                     <h1>
                         AboutMe

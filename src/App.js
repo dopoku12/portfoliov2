@@ -1,4 +1,4 @@
-import Nav from "./components/Nav";
+import Theme from "./components/Theme";
 import Home from "./components/Home"
 import Projects from "./components/Projects";
 import Resume from "./components/Resume"
@@ -8,6 +8,7 @@ import {
   FaAngleDown, FaCode
 } from 'react-icons/fa';
 import { TiAdjustContrast } from 'react-icons/ti'
+import Experience from "./components/Experience";
 
 function App() {
   let num = 0;
@@ -32,12 +33,17 @@ function App() {
   ].map(i => { return { ...i, id: num++ } })
 
   return (
-    <div className=" dark:bg-slate-800 dark:text-white box">
-      <Nav TiAdjustContrast={TiAdjustContrast} />
-      <main className="grid place-items-center">
-        <Home FaCode={FaCode} faIcons={faIcons}
-          FaAngleDown={FaAngleDown} />
-        <Projects FaAngleDown={FaAngleDown} />
+    <div className=" dark:bg-slate-800 dark:text-white 
+    grid grid-cols-2
+    ">
+    <nav>
+    <Theme TiAdjustContrast={TiAdjustContrast} />
+    <Home FaCode={FaCode} faIcons={faIcons}
+    FaAngleDown={FaAngleDown} />
+    </nav>
+      <main className="grid box place-items-center">
+      <Experience/>
+      <Projects FaAngleDown={FaAngleDown} />
         <Resume />
       </main>
 

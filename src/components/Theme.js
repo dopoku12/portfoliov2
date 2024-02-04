@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
 
-const Nav = ({ TiAdjustContrast }) => {
+const Theme = ({ TiAdjustContrast }) => {
     const [theme, setTheme] = useState('light')
     useEffect(() => {
         theme === 'dark' ?
@@ -16,17 +16,14 @@ const Nav = ({ TiAdjustContrast }) => {
 
     }
     return (
-        <nav className="dark:bg-slate-800">
-            <ul className="grid  grid-cols-5">
+            <ul className="grid grid-cols-5">
                 <li>
                     <button onClick={themeHandler}>
-
                         <TiAdjustContrast size={35} />
                     </button>
                 </li>
             </ul>
-        </nav>
     )
 }
 
-export default Nav;
+export default Theme;

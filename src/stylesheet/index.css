@@ -70,14 +70,6 @@ a {
   text-decoration: none;
 }
 
-.box {
-  height: 100vh;
-  width: 100vw;
-  background-size: cover;
-  position: sticky;
-  top: 0px;
-}
-
 .typewriter {
   display: inline-block;
   overflow: hidden;
@@ -111,12 +103,10 @@ a {
   .card {
     width: 100%;
   }
-
   .img-container {
     height: 100%;
     width: 100%;
   }
-
   .typewriter {
     font-size: medium;
   }
