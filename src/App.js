@@ -1,55 +1,42 @@
 import Theme from "./components/Theme";
-import Home from "./components/Home"
+import Home from "./components/Home";
 import Projects from "./components/Projects";
-import Resume from "./components/Resume"
-import {
-  FaGithub,
-  FaRegEnvelope, FaLinkedin,
-  FaAngleDown, FaCode
-} from 'react-icons/fa';
-import { TiAdjustContrast } from 'react-icons/ti'
 import Experience from "./components/Experience";
+import Skills from "./components/Skills";
+import icons from "./components/Icons";
+import { TiAdjustContrast } from "react-icons/ti";
 
 function App() {
-  let num = 0;
-  const faIcons = [
-    {
-      name: 'Linkedin',
-      iconName: FaLinkedin,
-      pathName: "https://www.linkedin.com/in/david-opoku-7008721b7/",
-      color: ' #0077b5'
-    },
-    {
-      name: 'Github',
-      iconName: FaGithub,
-      pathName: "https://github.com/dopoku12",
-    },
+   const contact = icons.contact.map((value, i) => (
+      <li key={i} className=" grid place-items-center ">
+         <a href={value.pathName}>
+            <value.iconName size={30} className="" color={value.color} />
+         </a>
+      </li>
+   ));
 
-    {
-      name: 'Email',
-      iconName: FaRegEnvelope,
-      pathName: "mailto:davidopoku30@gmail.com",
-    }
-  ].map(i => { return { ...i, id: num++ } })
+   return (
+      <div
+         className="dark:bg-slate-800 dark:text-white 
+    grid grid-cols-2 gap-20"
+      >
+         <nav className="grid place-items-center">
+            <div className="fixed top-0">
+               <Theme TiAdjustContrast={TiAdjustContrast} />
+               <Home />
+               <ul className=" m-10 grid grid-cols-3 gap-10 place-items-center">
+                  {contact}
+               </ul>
+            </div>
+         </nav>
 
-  return (
-    <div className=" dark:bg-slate-800 dark:text-white 
-    grid grid-cols-2
-    ">
-    <nav>
-    <Theme TiAdjustContrast={TiAdjustContrast} />
-    <Home FaCode={FaCode} faIcons={faIcons}
-    FaAngleDown={FaAngleDown} />
-    </nav>
-      <main className="grid box place-items-center">
-      <Experience/>
-      <Projects FaAngleDown={FaAngleDown} />
-        <Resume />
-      </main>
-
-    </div>
-
-  );
+         <main className="grid grid-rows-2 gap-10">
+            <Experience skillIcons={icons.skillIcons} />
+            <Projects skillIcons={icons.skillIcons} />
+            <Skills skillIcons={icons.skillIcons} />
+         </main>
+      </div>
+   );
 }
 
 export default App;
