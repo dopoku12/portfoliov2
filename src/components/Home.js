@@ -1,5 +1,5 @@
+import {Link} from "react-router-dom";
 function Home({ FaCode, FaAngleDown, faIcons }) {
-
     return (
 
         <header className='box  bg-white dark:bg-slate-800 grid place-items-center'>
@@ -35,11 +35,8 @@ function Home({ FaCode, FaAngleDown, faIcons }) {
                     })
                 }
             </ul>
-            <button className="hover:bg-orange-200 rounded-full">
-                <a href='#projects'>
-                    <FaAngleDown color='orange' size={30} />
-                </a>
-            </button>
+            
+
         </header>
 
     )

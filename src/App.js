@@ -1,14 +1,14 @@
 import Theme from "./components/Theme";
-import Home from "./components/Home"
-import Projects from "./components/Projects";
-import Resume from "./components/Resume"
+import Home from "./components/Home";
+
 import {
   FaGithub,
   FaRegEnvelope, FaLinkedin,
   FaAngleDown, FaCode
 } from 'react-icons/fa';
 import { TiAdjustContrast } from 'react-icons/ti'
-import Experience from "./components/Experience";
+
+import  {Link,Outlet}  from "react-router-dom";
 
 function App() {
   let num = 0;
@@ -33,20 +33,36 @@ function App() {
   ].map(i => { return { ...i, id: num++ } })
 
   return (
-    <div className=" dark:bg-slate-800 dark:text-white 
-    grid grid-cols-2
-    ">
+    <div className=" dark:bg-slate-800 dark:text-white ">
+
     <nav>
     <Theme TiAdjustContrast={TiAdjustContrast} />
     <Home FaCode={FaCode} faIcons={faIcons}
     FaAngleDown={FaAngleDown} />
+    <ul className="grid place-items-center">
+    <li>
+    <Link to={'/Projects'}>
+    Projects
+    </Link>
+    </li>
+    <li>
+     <Link to={'/Resume'}>
+     Skills
+     </Link>
+    </li>
+    <li>
+     <Link to={'/Experience'}>
+     Experience
+     </Link>
+    </li>
+    </ul>
+   
     </nav>
+   
+    
       <main className="grid box place-items-center">
-      <Experience/>
-      <Projects FaAngleDown={FaAngleDown} />
-        <Resume />
+   <Outlet/>
       </main>
-
     </div>
 
   );
