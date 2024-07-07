@@ -1,5 +1,5 @@
 import Skills from './Skills'
-import AboutMe from './AboutMe';
+import AboutMe from '../pages/AboutMe';
 function Resume() {
     return (
         <div id='resume' className='box grid bg-white dark:bg-slate-800 '>

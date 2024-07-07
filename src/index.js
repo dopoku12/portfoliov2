@@ -5,23 +5,25 @@ import './stylesheet/index.css';
 import App from './App';
 import ErrorPage from './pages/ErrorPage';
 
-import Projects from './components/Projects';
+import Projects from './pages/Projects';
 import Resume from './components/Resume';
-import Experience from './components/Experience';
+import Experience from './pages/Experience';
 const router = createBrowserRouter([
     {
         path: "/",
         element: <App />,
         errorElement: <ErrorPage />,
-        children: [
+        children: [{
+          path: "/",
+          element:<Projects />
+        },
       {
         path: "/Experience",
         element: <Experience/>,
     },
         {
           path: "/Projects",
-          element: 
-          <Projects />,
+          element:<Projects />,
         },
       
       {

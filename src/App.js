@@ -1,5 +1,5 @@
 import Theme from "./components/Theme";
-import Home from "./components/Home";
+import Home from "./pages/Home";
 
 import {
   FaGithub,
@@ -33,9 +33,9 @@ function App() {
   ].map(i => { return { ...i, id: num++ } })
 
   return (
-    <div className=" dark:bg-slate-800 dark:text-white ">
+    <div className="dark:bg-slate-800 dark:text-white grid place-items-center items-center grid-cols-2">
 
-    <nav>
+    <nav className="grid place-items-center items-center">
     <Theme TiAdjustContrast={TiAdjustContrast} />
     <Home FaCode={FaCode} faIcons={faIcons}
     FaAngleDown={FaAngleDown} />

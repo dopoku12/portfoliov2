@@ -93,7 +93,7 @@ function Projects({ FaAngleDown }) {
 
     return (
         <div id='projects'
-            className='box bg-white dark:bg-slate-800 grid place-items-center '>
+            className='box bg-white dark:bg-slate-800 grid place-items-center items-center'>
             <section >
                 <article  >
                     <header >
@@ -102,20 +102,16 @@ function Projects({ FaAngleDown }) {
                         </h1>
                     </header>
                     <ul className=' grid card
-                    md:grid-cols-4 gap-5
+                    md:grid-rows-4 gap-5
                     md:m-2
-                    grid-cols-2 
-                    sm:grid-cols-2 
+                    grid-rows-2 
+                    sm:grid-rows-2 
                     ' >
                         {projects}
                     </ul>
                 </article>
             </section >
-            <button className="hover:bg-orange-200 rounded-full">
-                <a href='#resume'>
-                    <FaAngleDown color='orange' size={30} />
-                </a>
-            </button>
+
         </div>
     )
 }

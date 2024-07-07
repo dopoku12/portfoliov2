@@ -1,4 +1,4 @@
-import {Link} from "react-router-dom";
+
 function Home({ FaCode, FaAngleDown, faIcons }) {
     return (
 
@@ -10,7 +10,7 @@ function Home({ FaCode, FaAngleDown, faIcons }) {
                     Software/QA Engineer
                 </h1>
 
-                <p className="text-2xl typewriter text-center">
+                <p className="text-xl typewriter text-center">
                     👋🏿  Hi I'm David, I turn dreams and visions into code.
                 </p>
             </div >
@@ -20,19 +20,13 @@ function Home({ FaCode, FaAngleDown, faIcons }) {
                     faIcons.map(i => {
                         return (
                             <li key={i.id} className=" grid
-                            place-items-center rounded-full w-20 h-20 
-                             hover:shadow-lg 
-                           " >
-                                <a href={i.pathName}>
-                                    <p >
-                                        <i.iconName size={30}
-                                            color={i.color} />
-                                        {i.name}
-                                    </p>
-                                </a>
-                            </li>
-                        )
-                    })
+                            place-items-center  w-20 h-20 " >
+                                <a href={i.pathName} title= {i.name}>
+                                        <i.iconName size={30} color={i.color} />
+                                        </a>
+                                        </li>
+                                    )
+                                })                      
                 }
             </ul>
             
