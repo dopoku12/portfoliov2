@@ -1,5 +1,7 @@
 import { FaCode } from "react-icons/fa";
+import { useOutletContext } from 'react-router-dom';
 function Projects({ FaAngleDown }) {
+   const context = useOutletContext();
    const projectLi = [
       {
          id: 0,

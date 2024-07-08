@@ -1,4 +1,8 @@
+import { useOutletContext } from 'react-router-dom';
+
 function Experience({ skillIcons }) {
+   const context = useOutletContext();
+console.log(context)
    const jobs = [
       {
          site: "https://gocloudforce.com/",
